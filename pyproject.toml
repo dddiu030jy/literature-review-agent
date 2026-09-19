@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "litreview-agent"
+version = "3.2.0"
+description = "An end-to-end literature review agent with coverage loops and publication/audit separation"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+fulltext = ["pypdf>=6.10,<7"]
+
+[project.scripts]
+litreview-agent = "litreview_agent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

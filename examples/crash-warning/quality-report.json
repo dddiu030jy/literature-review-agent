@@ -1,0 +1,98 @@
+{
+  "checks": {
+    "no_markdown_tables": true,
+    "no_blockquote_disclaimers": true,
+    "no_backstage_process_language": true,
+    "all_citations_have_reference_entries": true,
+    "all_reference_entries_are_cited": true,
+    "no_obvious_author_ledger_sentences": true,
+    "heading_architecture_automatic_checks_pass": true,
+    "argument_coherence_automatic_checks_pass": false
+  },
+  "publication_ready_automatic_checks": false,
+  "table_lines": [],
+  "blockquote_lines": [],
+  "backstage_process_hits": [],
+  "missing_reference_entries": [],
+  "uncited_reference_entries": [],
+  "cited_paragraph_count": 14,
+  "multi_source_cited_paragraph_ratio": 0.7857,
+  "single_source_cited_paragraphs": [
+    "关于“金融市场大跌预警：哪些指标具有预测能力、可预测性的边界与样本外稳定性（不限ETF）”，现有研究首先确立了哪些对象、概念与核心问题？现有研究的共同起点是：该组文献界定了研究对象、问题边界与主要解释视角，为后续方法比较提供共同起点。[1]。这些工作之所以构成同一讨论，并非因为结论完全一致，而是因为它们都从题名或摘要主要承担概念界定、理论讨论、领域综述或问题框定功能切入同一问题。",
+    "在解释路径上，相关研究主要使用I develop a model that combines investors&apos; asymmetric information with market makers&apos; inventory capacity and use it to analyze how lagged order flow forecasts future ret…；以及The model shows that the stronger predictive power of retail o",
+    "争议进一步集中在I develop a model that combines investors&apos; asymmetric information with market makers&apos; inventory capacity and use it to analyze how lagged order flow forecasts future ret…。概念共识尚不能说明何种数据与方法最适合回答这些问题。[1]。这使讨论自然转向一个更严格的问题：既然问题边界已经明确，研究者如何把它转化为可操作"
+  ],
+  "obvious_author_ledger_sentences": [],
+  "heading_architecture": {
+    "themes": [
+      {
+        "theme_id": "T1",
+        "publication_heading": "研究对象的概念边界与解释起点",
+        "heading_function": "concept_boundary",
+        "relation_to_previous": "independent",
+        "relation_rationale": "首节区分研究对象、概念层级与竞争性解释，为后续经验证据设定边界。",
+        "parallel_group": "",
+        "inherited_question": "",
+        "next_question": "既然问题边界已经明确，研究者如何把它转化为可操作的数据与方法？",
+        "quality_status": "model_generated"
+      },
+      {
+        "theme_id": "T2",
+        "publication_heading": "可识别经验命题的构造",
+        "heading_function": "identification",
+        "relation_to_previous": "evidence_escalation",
+        "relation_rationale": "承接概念边界，把抽象研究对象转化为数据、模型与可检验命题。",
+        "parallel_group": "",
+        "inherited_question": "既然问题边界已经明确，研究者如何把它转化为可操作的数据与方法？",
+        "next_question": "这些方法在实际应用和经验研究中表现如何，证据是否一致？",
+        "quality_status": "model_generated"
+      },
+      {
+        "theme_id": "T3",
+        "publication_heading": "应用情境中的效应异质性与条件依赖",
+        "heading_function": "prediction",
+        "relation_to_previous": "evidence_escalation",
+        "relation_rationale": "在可识别性基础上检验方法表现是否跨场景成立，并提高经验有效性的证据要求。",
+        "parallel_group": "",
+        "inherited_question": "这些方法在实际应用和经验研究中表现如何，证据是否一致？",
+        "next_question": "哪些风险、偏差与评价缺口限制了这些结果的推广？",
+        "quality_status": "model_generated"
+      },
+      {
+        "theme_id": "T4",
+        "publication_heading": "证据边界、评价有效性与跨情境推广",
+        "heading_function": "external_validity",
+        "relation_to_previous": "boundary_extension",
+        "relation_rationale": "由局部结果转向风险、评价设计与外部有效性，明确结论可以推广到哪里。",
+        "parallel_group": "",
+        "inherited_question": "哪些风险、偏差与评价缺口限制了这些结果的推广？",
+        "next_question": "未来如何建立可复现、可比较且能反映真实边界条件的证据体系？",
+        "quality_status": "model_generated"
+      }
+    ],
+    "parallel_groups": {},
+    "checks": {
+      "all_publication_headings_present": true,
+      "publication_headings_unique": true,
+      "no_generic_publication_headings": true,
+      "relation_metadata_complete": true,
+      "question_headings_used_selectively": true
+    },
+    "automatic_checks_pass": true,
+    "generic_headings": [],
+    "missing_relation_metadata_theme_ids": [],
+    "needs_human_review": [
+      "parallel headings use the same substantive object and abstraction level",
+      "progressive headings genuinely raise the evidentiary burden",
+      "the complete heading sequence is proportionate to the target journal and topic"
+    ],
+    "publication_boundary": "This architecture is backstage audit material, not review-body prose."
+  },
+  "argument_coherence_summary": {
+    "automatic_checks_pass": false,
+    "rewrite_required": true,
+    "needs_human_review": true
+  },
+  "synthesis_note": "The ratio is a diagnostic, not a hard quality verdict; some precise claims legitimately rely on one primary source.",
+  "note": "Automatic form checks do not replace human claim-to-source verification."
+}

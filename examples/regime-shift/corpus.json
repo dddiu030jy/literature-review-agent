@@ -1,0 +1,3739 @@
+[
+  {
+    "paper_id": "Lb0e0141de4b2",
+    "title": "Cross-Asset Market Regime Detection Using Hidden Markov Models: A Framework for Real-Time Regime-Aware Risk Management",
+    "authors": [
+      "Sumanth Polavarapu"
+    ],
+    "year": 2026,
+    "abstract": "<jats:p><p>Standard quantitative risk models assume financial returns follow a normal distribution with constant volatility. This paper demonstrates empirically that this assumption fails during regime shifts, producing an 11.58 percentage point underestimation of annual tail risk for S&amp;P 500 returns spanning the 2020 COVID crisis and 2022 Federal Reserve rate shock (January 2020 – December 2024).</p> <p>We implement a cross-asset Gaussian Hidden Markov Model (HMM) — the Kroniq Regime Radar — using nine features across five asset classes: SPY, VIX, TLT, GLD, and ICE BofA US High Yield credit spreads (FRED: BAMLH0A0HYM2). A rigorous BIC model selection sweep across K=3 through K=9, with 5 independent random seeds per K and minimum state-size stability validation, confirms K=5 as the optimal and production-ready state count. Models at K=6, K=7, and K=8 produce unstable micro-states (as few as 9 days), inconsistent with reliable live regime routing.</p> <p>The five-state model produces a two-stage early warning for the March 2020 COVID crash: a Macro stress signal on October 1, 2019 — 141 calendar days before the February 19, 2020 SPY price peak — followed by full Crisis classification on February 28, 2020, before 79% of the total drawdown materialised. This 141-day lead time substantially extended early warning capability relative to the seven-feature baseline (23 days), attributable to the credit spread features; it is event-specific and not assumed to generalise as a consistent predictive horizon. Static out-of-sample performance (2021–2024): Sharpe 1.107, maximum drawdown -8.37%, CAGR 7.94%. Walk-forward OOS with quarterly retraining: Sharpe 0.881, MaxDD -17.46%, CAGR 9.97% — all exceeding buy-and-hold Sharpe of 0.859.</p> <p>The five-state transition probability matrix confirms regime persistence (Low-Vol: 95.5%, Bull: 92.7%, Neutral: 92.5%, Macro: 81.7%, Crisis: 73.0%) with no direct transitions from calm states to crisis within the observed training sample — consistent with how market dislocations actually unfold. Regime persistence is consistent with macro intuition, with states typically lasting multiple weeks to months rather than exhibiting high-frequency switching. The model demonstrates cross-event generalization across structurally distinct regime types: correctly classifying the fast COVID-2020 dislocation (Crisis state, VIX &gt; 48) and the prolonged 2022 Federal Reserve rate shock (Macro state, 99.2% classification purity) without structural modification. All three historical sanity checks pass. The objective is not to predict markets, but to dynamically adapt risk exposure to evolving regimes. These findings motivate the Kroniq framework: a cross-asset HMM regime detection API targeting institutional systematic funds.</p></jats:p>",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.6539358"
+    },
+    "doi": "10.2139/ssrn.6539358",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.6539358",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "hidden Markov model market regime detection finance"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L44220aca7e87",
+    "title": "Deep learning-driven regime switching models for capturing structural breaks and volatility clustering in financial time series",
+    "authors": [
+      "Junyu Wang"
+    ],
+    "year": 2026,
+    "abstract": "<jats:p>The mechanism of switching and the identification of structural breakpoints in financial markets across different macro environments have long been core challenges in asset pricing and risk management. Traditional parametric models suffer from insufficient flexibility to capture nonlinear dynamic processes. This study proposes a regime-switching model driven by deep learning. By integrating a bidirectional long short-term memory network with the probabilistic inference framework of the Markov transformation process, a unified optimization framework for structural break identification, market regime classification, and volatility clustering modeling is constructed, in which the attention mechanism dynamically focuses on key historical information to enable mechanism identification. A multi-layer perceptron generates state-dependent GARCH parameters to adaptively capture the characteristics of heterogeneous fluctuations, and adaptive threshold monitoring based on KL divergence enables quantitative identification of structural breaks. Experiments show that the model achieves significant performance advantages over traditional methods in structural break detection, mechanism transition identification, and volatility prediction. The cross-market generalization ability and robustness analysis verify the model's applicability across different asset classes and time horizons. The posterior probability distribution of the model's state output can support asset allocation decisions, and the breakpoint identification mechanism provides quantitative early-warning indicators for regulators. It has important practical value in scenarios such as portfolio management, market timing strategies, and systemic risk prevention.</jats:p>",
+    "venue": "Future Technology",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.55670/fpll.futech.5.2.25"
+    },
+    "doi": "10.55670/fpll.futech.5.2.25",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.55670/fpll.futech.5.2.25",
+    "citation_count": 1,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "structural breaks asset returns volatility financial time series"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L5e5d3079929b",
+    "title": "Market Regime Detection in Bitcoin Time Series Using K-Means Clustering and Hidden Markov Models",
+    "authors": [
+      "Calandra A. Haryani"
+    ],
+    "year": 2026,
+    "abstract": "<jats:p>The rapid growth of cryptocurrency markets has created new challenges in understanding and predicting the structural dynamics of digital asset prices. Bitcoin, as the most traded blockchain-based currency, exhibits extreme volatility, nonlinear patterns, and complex regime shifts that traditional financial models cannot adequately capture. This study proposes a hybrid analytical framework that integrates K Means clustering with the Hidden Markov Model to identify and model multiple market regimes in Bitcoin time series data. The Bitcoin dataset used in this research contains minute-level records that were preprocessed to extract key indicators, namely logarithmic returns and rolling volatility, which represent the short-term dynamics of market behavior. The K Means algorithm was first employed to segment the data into three distinct clusters that correspond to bullish, bearish, and sideways regimes, followed by the application of the Hidden Markov Model to estimate probabilistic transitions between these regimes over time. The results reveal that the hybrid K Means and Hidden Markov Model approach achieves superior performance compared to a standalone model, as indicated by a higher log likelihood and a lower Bayesian Information Criterion value. The transition probability matrix shows that bullish and bearish regimes are highly persistent, while the sideways regime acts as a transitional buffer that connects both market extremes. The empirical findings confirm that Bitcoin prices evolve through persistent and probabilistically determined regimes rather than random fluctuations. The proposed framework provides a more comprehensive understanding of cryptocurrency market dynamics and offers practical value for investors, risk analysts, and policymakers in designing adaptive trading and risk management strategies within blockchain-based financial ecosystems.</jats:p>",
+    "venue": "Journal of Digital Market and Digital Currency",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.47738/jdmdc.v3i1.57"
+    },
+    "doi": "10.47738/jdmdc.v3i1.57",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.47738/jdmdc.v3i1.57",
+    "citation_count": 1,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "hidden Markov model market regime detection finance"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Lcf3375da48b9",
+    "title": "International Asset Allocation under Regime Switching, Skew and Kurtosis Preferences",
+    "authors": [
+      "Massimo Guidolin",
+      "Allan Timmermann"
+    ],
+    "year": 2005,
+    "abstract": "This paper proposes a new tractable approach to solving asset allocation problems in situations with a large number of risky assets which pose problems for standard approaches. Investor preferences are assumed to be defined over moments of the wealth distribution such as its mean, variance, skew and kurtosis. Time-variations in investment opportunities are represented by a flexible regime switching process. In the context of a four-moment international CAPM specification that relates stock returns in five regions to returns on a global market portfolio, we find evidence of distinct bull and bear states. Ignoring regimes, an unhedged US investor's optimal portfolio is strongly diversified internationally. The presence of regimes in the return distribution leads to a large increase in the investor's optimal holdings of US stocks as does the introduction of skew and kurtosis preferences. Our paper therefore offers an explanation of the strong home bias observed in US investors' asset allocation based on regime switching and skew and kurtosis preferences.",
+    "venue": "",
+    "sources": [
+      "openalex"
+    ],
+    "source_ids": {
+      "openalex": "https://openalex.org/W3122009142"
+    },
+    "doi": "10.20955/wp.2005.034",
+    "arxiv_id": "",
+    "url": "https://openalex.org/W3122009142",
+    "citation_count": 142,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio allocation risk management"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Lc124e97c60f1",
+    "title": "A Stochastic Volatility Model with Markov Regime-Switching Skewness: International Evidence of Time-Varying Skewness in Stock Index Returns",
+    "authors": [
+      "Kitak Kim",
+      "Kyu Ho Kang"
+    ],
+    "year": 2026,
+    "abstract": "<jats:p>This study investigates the time-varying skewness of aggregate stock returns. To this end, we propose a novel stochastic volatility (SV) model with time-varying skewness. The skewness is modeled by a split-normal return error, and the asymmetric error variance of the split-normal innovation is assumed to follow a firstorder Markov-switching process. This modeling approach allows us to efficiently simulate the SV via single-block Gibbs sampling, and we demonstrate through simulation studies that this approach correctly detects regime shifts in skewness. Our empirical analysis of six major aggregate stock index return data shows that the aggregate returns exhibit negative skewness during normal periods; meanwhile, the index returns are symmetric during market crash episodes. (JEL classification: C32, C51, G17)</jats:p>",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.6459830"
+    },
+    "doi": "10.2139/ssrn.6459830",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.6459830",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "Markov switching financial returns volatility regime"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L7ebc90292158",
+    "title": "Machine Learning-Driven Market Regime Analysis in Equity Markets: A Gaussian Hidden Markov Model Approach",
+    "authors": [
+      "Cemal Öztürk"
+    ],
+    "year": 2025,
+    "abstract": "<jats:p>This research develops a data-based system which reveals concealed market patterns through its identification of separate market regimes that produce unique return, volatility, and risk characteristics. The current financial models fail to recognize the intricate relationships which exist between different asset classes, including stocks and bonds, interest rates, commodities, and economic data indicators. The research employs a multivariate Hidden Markov Model (HMM) with improved data preprocessing techniques and principal component analysis (PCA) to process data from 2010 to 2025. The developed system detects nine separate market states which match actual economic and financial market situations. The market expansion phases produce strong investment returns at 20-30% annual rates while keeping market volatility at 12% but the contractionary phases lead to dangerous market conditions and negative investment results. The market transitions between different states occur at a slow pace because market conditions tend to stay stable instead of experiencing abrupt changes. The model shows a 100% probability that the market operates under Regime 8 which produces stable returns with a 1.6 Sharpe ratio during November 2025 while showing limited market volatility. Overall, the results highlight the cyclical yet persistent nature of market behavior and provide practical tools for improving risk management, policy assessment, and data-informed investment decisions.</jats:p>",
+    "venue": "Modern Mikro İktisat: Teoriden Uygulamaya",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.58830/ozgur.pub1120.c4538"
+    },
+    "doi": "10.58830/ozgur.pub1120.c4538",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.58830/ozgur.pub1120.c4538",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "hidden Markov model market regime detection finance"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L34489cafe945",
+    "title": "Implementation of Hidden Markov Model (HMM) to Predict Financial Market Regime",
+    "authors": [
+      "Irma Palupi",
+      "Bambang Ari Wahyudi",
+      "Agung Perdana Putra"
+    ],
+    "year": 2021,
+    "abstract": "",
+    "venue": "2021 9th International Conference on Information and Communication Technology (ICoICT)",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.1109/icoict52021.2021.9527459"
+    },
+    "doi": "10.1109/icoict52021.2021.9527459",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.1109/icoict52021.2021.9527459",
+    "citation_count": 9,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "hidden Markov model market regime detection finance"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L0b9986cc5555",
+    "title": "Asymmetric Hidden Markov Modeling of Order Flow Imbalances for Microstructure-Aware Market Regime Detection",
+    "authors": [
+      "Jay Salvi"
+    ],
+    "year": 2025,
+    "abstract": "",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.5315733"
+    },
+    "doi": "10.2139/ssrn.5315733",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.5315733",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "hidden Markov model market regime detection finance"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L541f063f9075",
+    "title": "Global Asset Allocation Strategy Using a Hidden Markov Model",
+    "authors": [
+      "Eunchong Kim",
+      "Han-wook Jeong",
+      "Nak-young Lee"
+    ],
+    "year": 2019,
+    "abstract": "This study uses the hidden Markov model (HMM) to identify the phases of individual assets and proposes an investment strategy using price trends effectively. We conducted empirical analysis for 15 years from January 2004 to December 2018 on universes of global assets divided into 10 classes and the more detailed 22 classes. Both universes have been shown to have superior performance in strategy using HMM in common. By examining the change in the weight of the portfolio, the weight change between the asset classes occurs dynamically. This shows that HMM increases the weight of stocks when stock price rises and increases the weight of bonds when stock price falls. As a result of analyzing the performance, it was shown that the HMM effectively reflects the asset selection effect in Jensen’s alpha, Fama’s Net Selectivity and Treynor-Mazuy model. In addition, the strategy of the HMM has positive gamma value even in the Treynor-Mazuy model. Ultimately, HMM is expected to enable stable management compared to existing momentum strategies by having asset selection effect and market forecasting ability.",
+    "venue": "Journal of risk and financial management",
+    "sources": [
+      "openalex"
+    ],
+    "source_ids": {
+      "openalex": "https://openalex.org/W2986919024"
+    },
+    "doi": "10.3390/jrfm12040168",
+    "arxiv_id": "",
+    "url": "https://openalex.org/W2986919024",
+    "citation_count": 17,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "hidden Markov model market regime detection finance"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Lea74b3a1b89e",
+    "title": "Asset Allocation with Markovian Regime Switching: Efficient Frontier and Tangent Portfolio with Regime Switching",
+    "authors": [
+      "André Barbosa Oliveira",
+      "Pedro Luiz Valls Pereira"
+    ],
+    "year": 2018,
+    "abstract": "<jats:p>A alocação de portfólio é importante na gestão de riscos e realização de ganhos no mercado financeiro. A alocação de ativos é uma tomada de decisão sob incerteza baseada em métodos estatísticos. Os retornos dos ativos financeiros geralmente apresentam mudança de regime, com distribuição dos retornos diferente nos períodos de normalidade e crise. A mudança de regime no processo gerador dos retornos torna necessário reformular o problema de alocação de portfólio. Este trabalho desenvolve modelos de alocação de portfólio com mudança de regime. Como resultado do estudo comparativo de alocação de ativos os portfólios com mudança de regime permitem aumentar o espaço de risco e retorno, diminuindo o risco para cada nível de retornos da fronteira eficiente média variância, e possuem melhor relação risco e retorno dos rendimentos no tempo. </jats:p>",
+    "venue": "Brazilian Review of Econometrics",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.12660/bre.v38n12018.66264"
+    },
+    "doi": "10.12660/bre.v38n12018.66264",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.12660/bre.v38n12018.66264",
+    "citation_count": 1,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio allocation risk management"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Lff059793c4e8",
+    "title": "Market Regime Identification Using Hidden Markov Models",
+    "authors": [
+      "Yuan Yuan",
+      "Gautam Mitra"
+    ],
+    "year": 2019,
+    "abstract": "",
+    "venue": "SSRN Electronic Journal",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.3406068"
+    },
+    "doi": "10.2139/ssrn.3406068",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.3406068",
+    "citation_count": 6,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "hidden Markov model market regime detection finance"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L566a4745841a",
+    "title": "Asset Allocation With Markovian Regime Switching: Efficient Frontier and Tangent Portfolio With Regime Switching",
+    "authors": [
+      "Andre Barbosa Oliveira",
+      "Pedro L. Valls Pereira"
+    ],
+    "year": 2018,
+    "abstract": "",
+    "venue": "SSRN Electronic Journal",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.3143129"
+    },
+    "doi": "10.2139/ssrn.3143129",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.3143129",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio allocation risk management"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L45618b9aa4ce",
+    "title": "Dynamic Mean-Variance Portfolio Allocation under Regime-Switching Jump-Diffusions with Absorbing Barriers and Distribution Matching",
+    "authors": [
+      "Artur Sepp"
+    ],
+    "year": 2026,
+    "abstract": "<jats:p>We study the continuous-time dynamic mean-variance (MV) portfolio allocation problem when the risky asset follows a two-state regime-switching process with exponentially distributed jumps occurring at regime transitions. The value function admits a regime-conditional quadratic representation, yielding a coupled system of nonlinear Riccati ordinary differential equations whose optimal feedback policy retains the Merton-Lipton structure the Merton ratio adjusted by a goal-seeking funding ratio in each regime. We introduce an absorbing wealth floor for capital preservation and develop a Laplace transform framework employing Arrow-Debreu state prices in the Laplace domain. The stopped wealth distribution has two components absent in the pure diffusion case: regime-dependent stopping probabilities and jump overshoot below the floor. We formulate the inverse problem of matching a target terminal wealth distribution using mixtures of stopped strategies across asset classes and show that the family of achievable distributions approximates target distributions in the Wasserstein-1 topology. Numerical examples illustrate the framework for a three-asset-class portfolio (bonds, equity, private equity) calibrated to typical capital market assumptions.</jats:p>",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.6534579"
+    },
+    "doi": "10.2139/ssrn.6534579",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.6534579",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio allocation risk management"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L7738d1b67d71",
+    "title": "A Stochastic Volatility Model with Markov Regime-Switching Skewness: International Evidence of Time-Varying Skewness in Stock Index Returns",
+    "authors": [
+      "Kitak Kim",
+      "Kyu Ho Kang"
+    ],
+    "year": 2025,
+    "abstract": "",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.5395792"
+    },
+    "doi": "10.2139/ssrn.5395792",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.5395792",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "Markov switching financial returns volatility regime"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Lac82684cfbe7",
+    "title": "Modelling regime shifts: Markov switching models",
+    "authors": [],
+    "year": 2008,
+    "abstract": "",
+    "venue": "Financial Econometrics",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.4324/9780203892879-14"
+    },
+    "doi": "10.4324/9780203892879-14",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.4324/9780203892879-14",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "Markov switching financial returns volatility regime"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L5b8438ba1450",
+    "title": "Regime-switching in bitcoin volatility under global uncertainty: Markov-switching GARCH and hidden Markov Copula approaches",
+    "authors": [
+      "Amin Shakourloo",
+      "Asil Azimli"
+    ],
+    "year": 2026,
+    "abstract": "",
+    "venue": "Research in International Business and Finance",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.1016/j.ribaf.2026.103295"
+    },
+    "doi": "10.1016/j.ribaf.2026.103295",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.1016/j.ribaf.2026.103295",
+    "citation_count": 2,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "hidden Markov model market regime detection finance"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Ld661abefb95e",
+    "title": "Regime-Switching in Bitcoin Volatility Under Global Uncertainty: Markov-Switching GARCH and Hidden Markov Copula Approaches",
+    "authors": [
+      "Amin Shakourloo",
+      "Asil Azimli"
+    ],
+    "year": 2025,
+    "abstract": "",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.5347272"
+    },
+    "doi": "10.2139/ssrn.5347272",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.5347272",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "Markov switching financial returns volatility regime"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L74af5b075010",
+    "title": "Optimal Portfolio Allocation with Regime-Switching and Jump-Diffusion Dynamics: A Deep Reinforcement Learning Approach",
+    "authors": [
+      "Xinyu Yan"
+    ],
+    "year": 2025,
+    "abstract": "",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.5053669"
+    },
+    "doi": "10.2139/ssrn.5053669",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.5053669",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio allocation risk management"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L43d637ab162c",
+    "title": "Real-Time Monitoring for Stock Return Predictability in Nonstationary Volatility Environments",
+    "authors": [
+      "Matei Demetrescu",
+      "Fabian Schmidt",
+      "Robert Taylor"
+    ],
+    "year": 2025,
+    "abstract": "",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.5462182"
+    },
+    "doi": "10.2139/ssrn.5462182",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.5462182",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "pockets predictability stock returns real time out of sample"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L74b7a02fc574",
+    "title": "Improving GARCH volatility forecasts with regime-switching GARCH",
+    "authors": [
+      "Franc Klaassen"
+    ],
+    "year": 2002,
+    "abstract": "",
+    "venue": "Empirical Economics",
+    "sources": [
+      "openalex"
+    ],
+    "source_ids": {
+      "openalex": "https://openalex.org/W2126800696"
+    },
+    "doi": "10.1007/s001810100100",
+    "arxiv_id": "",
+    "url": "https://openalex.org/W2126800696",
+    "citation_count": 492,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "Markov switching financial returns volatility regime"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L201a49f48c91",
+    "title": "Improving GARCH volatility forecasts with regime-switching GARCH",
+    "authors": [
+      "Franc Klaassen"
+    ],
+    "year": 2002,
+    "abstract": "",
+    "venue": "Advances in Markov-Switching Models",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.1007/978-3-642-51182-0_10"
+    },
+    "doi": "10.1007/978-3-642-51182-0_10",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.1007/978-3-642-51182-0_10",
+    "citation_count": 37,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "Markov switching financial returns volatility regime"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L2ef62f002b83",
+    "title": "Bootstrapping out-of-sample predictability tests with real-time data",
+    "authors": [
+      "Sílvia Gonçalves",
+      "Michael W. McCracken",
+      "Yongxu Yao"
+    ],
+    "year": 2025,
+    "abstract": "",
+    "venue": "Journal of Econometrics",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.1016/j.jeconom.2024.105916"
+    },
+    "doi": "10.1016/j.jeconom.2024.105916",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.1016/j.jeconom.2024.105916",
+    "citation_count": 2,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "pockets predictability stock returns real time out of sample"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L6344802700fc",
+    "title": "Bootstrapping out-of-sample predictability tests with real-time data",
+    "authors": [
+      "Michael W. McCracken",
+      "Yongxu Yao",
+      "Silvia Goncalves"
+    ],
+    "year": 2023,
+    "abstract": "",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.20955/wp.2023.029"
+    },
+    "doi": "10.20955/wp.2023.029",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.20955/wp.2023.029",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "pockets predictability stock returns real time out of sample"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L6e9f4bd2dcfe",
+    "title": "Out-of-sample exchange rate predictability with real-time and revised data",
+    "authors": [
+      "Onur Ince",
+      "Tanya Molodtsova"
+    ],
+    "year": 2025,
+    "abstract": "",
+    "venue": "Applied Economics",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.1080/00036846.2025.2540600"
+    },
+    "doi": "10.1080/00036846.2025.2540600",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.1080/00036846.2025.2540600",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "pockets predictability stock returns real time out of sample"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Lbb553b71ece9",
+    "title": "Markov and Hidden Markov Models for Regime Detection in Cryptocurrency Markets: Evidence from Bitcoin (2024–2026)",
+    "authors": [
+      "Hossein Malekinezhad",
+      "Roya Rafati"
+    ],
+    "year": 2026,
+    "abstract": "<jats:p>This study investigates the application of Markov and Hidden Markov Models (HMMs) for detecting latent market regimes in cryptocurrency markets, with a particular focus on Bitcoin. Cryptocurrency markets are characterized by high volatility, structural breaks, and non-stationary behavior, which often limit the effectiveness of traditional linear time-series models. Hidden Markov Models provide a probabilistic framework capable of identifying unobservable market states that generate observed price dynamics. In this research, a regime-switching framework is developed to classify Bitcoin market conditions into distinct latent states characterized by different statistical properties of returns and volatility. The proposed methodology extends standard homogeneous HMMs by incorporating non-homogeneous transition probabilities and Bayesian estimation techniques to better capture dynamic market behavior. Time-varying transition probabilities allow the model to reflect evolving market conditions influenced by trading activity and external factors. Additionally, extensions addressing duration dependence and long-memory volatility are considered to improve regime persistence modeling. Empirical evaluation using Bitcoin data demonstrates that regime-aware modeling effectively captures transitions between low-volatility consolidation phases and high-volatility turbulent periods. The results suggest that incorporating regime detection significantly improves the interpretability of market dynamics and provides a valuable foundation for risk-aware trading strategies and adaptive portfolio allocation in highly volatile digital asset markets. The findings highlight the potential of Hidden Markov frameworks as a robust tool for understanding structural shifts in cryptocurrency markets and improving predictive modeling of financial time series.</jats:p>",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.20944/preprints202603.0831.v1"
+    },
+    "doi": "10.20944/preprints202603.0831.v1",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.20944/preprints202603.0831.v1",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "hidden Markov model market regime detection finance"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L14bfe1405381",
+    "title": "Predicting Risk-adjusted Returns using an Asset Independent Regime-switching Model",
+    "authors": [
+      "Nicklas Werge"
+    ],
+    "year": 2021,
+    "abstract": "Financial markets tend to switch between various market regimes over time, making stationarity-based models unsustainable. We construct a regime-switching model independent of asset classes for risk-adjusted return predictions based on hidden Markov models. This framework can distinguish between market regimes in a wide range of financial markets such as the commodity, currency, stock, and fixed income market. The proposed method employs sticky features that directly affect the regime stickiness and thereby changing turnover levels. An investigation of our metric for risk-adjusted return predictions is conducted by analyzing daily financial market changes for almost twenty years. Empirical demonstrations of out-of-sample observations obtain an accurate detection of bull, bear, and high volatility periods, improving risk-adjusted returns while keeping a preferable turnover level.",
+    "venue": "arXiv",
+    "sources": [
+      "arxiv"
+    ],
+    "source_ids": {
+      "arxiv": "2107.05535v1"
+    },
+    "doi": "",
+    "arxiv_id": "2107.05535v1",
+    "url": "https://arxiv.org/pdf/2107.05535v1",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "Markov switching financial returns volatility regime"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L8668cd81f42e",
+    "title": "Multi-Period Portfolio Optimization with Investor Views under Regime Switching",
+    "authors": [
+      "Razvan Oprisor",
+      "Roy Kwon"
+    ],
+    "year": 2020,
+    "abstract": "<jats:p>We propose a novel multi-period trading model that allows portfolio managers to perform optimal portfolio allocation while incorporating their interpretable investment views. This model’s significant advantage is its intuitive and reactive design that incorporates the latest asset return regimes to quantitatively solve managers’ question: how certain should one be that a given investment view is occurring? First, we describe a framework for multi-period portfolio allocation formulated as a convex optimization problem that trades off expected return, risk and transaction costs. Using a framework borrowed from model predictive control introduced by Boyd et al., we employ optimization to plan a sequence of trades using forecasts of future quantities, only the first set being executed. Multi-period trading lends itself to dynamic readjustment of the portfolio when gaining new information. Second, we use the Black-Litterman model to combine investment views specified in a simple linear combination based format with the market portfolio. A data-driven method to adjust the confidence in the manager’s views by comparing them to dynamically updated regime-switching forecasts is proposed. Our contribution is to incorporate both multi-period trading and interpretable investment views into one framework and offer a novel method of using regime-switching to determine each view’s confidence. This method replaces portfolio managers’ need to provide estimated confidence levels for their views, substituting them with a dynamic quantitative approach. The framework is reactive, tractable and tested on 15 years of daily historical data. In a numerical example, this method’s benefits are found to deliver higher excess returns for the same degree of risk in both the case when an investment view proves to be correct, but, more notably, also the case when a view proves to be incorrect. To facilitate ease of use and future research, we also developed an open-source software library that replicates our results.</jats:p>",
+    "venue": "Journal of Risk and Financial Management",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.3390/jrfm14010003"
+    },
+    "doi": "10.3390/jrfm14010003",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.3390/jrfm14010003",
+    "citation_count": 14,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio allocation risk management"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L9789b36e4567",
+    "title": "Nonparametric Regime Segmentation in Financial Time Series via Hilbert–ICEEMDAN and Penalized Change-Point Inference",
+    "authors": [
+      "Devansh Garg"
+    ],
+    "year": 2025,
+    "abstract": "<title>Abstract</title> <p>This paper presents a novel methodological framework for detecting structural breaks in multivariate financial time series using Hilbert–ICEEMDAN decomposition combined with penalized change-point estimation. The approach decomposes 12 major financial assets over 17+ years (5,150 observations) into piecewise-stationary Intrinsic Mode Functions (IMFs) using ICEEMDAN, enabling well-defined instantaneous frequency extraction via Hilbert spectral analysis. IMF selection employs median period filtering within the 5-60 day range, with cross-asset aggregation through robust median-based combination of amplitude and frequency components. Change-point detection uses the PELT algorithm with least-squares cost function, penalty parameter β=5.0, and minimum segment length of 63 days. The framework identifies 57 distinct regime periods with median duration of 69 days, demonstrating consistency across parameter sensitivity analysis (125 combinations tested) and robustness diagnostics (9/9 validation checks passed). As an empirical illustration, regime-switched trading strategies achieve Sharpe ratios of 0.778 versus 0.381 for equalweight benchmarks, with walk-forward validation showing median Sharpe ratios of 1.155 for 5-year training periods. The system successfully captures major market events including the 2008 financial crisis, 2010 flash crash, 2011 European debt crisis, 2018 volatility spike, 2020 COVID crash, and 2022 Ukraine conflict. <bold>MSC 2020:</bold> 62M10, 62M20, 91G05, 62L12, 91G70 <bold>JEL:</bold> C22, C58, C14, C32, G11</p>",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.21203/rs.3.rs-7877838/v1"
+    },
+    "doi": "10.21203/rs.3.rs-7877838/v1",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.21203/rs.3.rs-7877838/v1",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "change point detection financial time series regime shift"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L4ec4853bae49",
+    "title": "Optimal Portfolio Choice under Regime Switching, Skew and Kurtosis Preferences",
+    "authors": [
+      "Massimo Guidolin",
+      "Allan Timmermann"
+    ],
+    "year": 2005,
+    "abstract": "This paper proposes a new tractable approach to solving multi-period asset allocation problems. We assume that investor preferences are dened over moments of the terminal wealth distribution such as its skew and kurtosis. Time-variations in investment opportunities are driven by a regime switching process that can capture bull and bear states. We develop analytical methods that only require solving a small set of difference equations and thus are very convenient to use. These methods are applied to a simple portfolio selection problem involving choosing between a stock index and a risk-free asset in the presence of bull and bear states in the return distribution. If the market is in a bear state, investors increase allocations to stocks the longer their time horizon. Conversely, in bull markets it is optimal for investors to decrease allocations to stocks the longer their investment horizon.",
+    "venue": "",
+    "sources": [
+      "openalex"
+    ],
+    "source_ids": {
+      "openalex": "https://openalex.org/W1551289650"
+    },
+    "doi": "10.20955/wp.2005.006",
+    "arxiv_id": "",
+    "url": "https://openalex.org/W1551289650",
+    "citation_count": 33,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio allocation risk management"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Lcf69e2b31cdb",
+    "title": "Nonparametric predictive regression for stock return prediction",
+    "authors": [
+      "Tingting Cheng",
+      "Jiti Gao",
+      "Oliver Linton",
+      "Yayi Yan"
+    ],
+    "year": 2025,
+    "abstract": ".We propose a multi-step nonparametric predictive regression model, which allows for general locally stationary predictors and time-varying/nonlinear return predictability. We propose a kernel estimation method and establish the large sample properties in both short and long horizons. We apply our method to stock return prediction using a number of standard predictors such as dividend yield. The empirical results show that our proposed model can outperform the historical mean benchmark, linear predictive regression model, and several machine learning methods for some cases in terms of out-of-sample forecasting performance. We also compare our method with the historical mean benchmark using an economic metric. In particular, we show how our methods could be used to deliver a trading strategy that beats the buy-and-hold strategy over our sample period.",
+    "venue": "Econometric Reviews",
+    "sources": [
+      "openalex"
+    ],
+    "source_ids": {
+      "openalex": "https://openalex.org/W4411995705"
+    },
+    "doi": "10.1080/07474938.2025.2519389",
+    "arxiv_id": "",
+    "url": "https://openalex.org/W4411995705",
+    "citation_count": 1,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "pockets predictability stock returns real time out of sample"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L19ffbb22710a",
+    "title": "Predicting bond return predictability",
+    "authors": [
+      "Andersen, Daniel Borup",
+      "Jonas N. Eriksen",
+      "Mads Markvart Kjær",
+      "Martin Thyrsgaard"
+    ],
+    "year": 2024,
+    "abstract": "This paper provides empirical evidence on predictable time variations in out-of-sample bond return predictability. Bond return predictability is associated with periods of high (low) economic activity (uncertainty), which implies that violations of the expectations hypothesis are state- dependent and linked to features of the business cycle. These state-dependencies in predictability, established by introducing a new multivariate test for equal conditional predictive ability, can be used in real-time to improve out-of-sample bond risk premia estimates and investors’ economic utility through a novel dynamic forecast combination scheme that uses predicted forecasting performance to identify the best set of methods to include in the combined forecast. Dynamically combined forecasts exhibit strong countercyclical behavior and peak during recessions.",
+    "venue": "",
+    "sources": [
+      "openalex"
+    ],
+    "source_ids": {
+      "openalex": "https://openalex.org/W3151084463"
+    },
+    "doi": "10.1287/mnsc.2023.4713",
+    "arxiv_id": "",
+    "url": "https://openalex.org/W3151084463",
+    "citation_count": 21,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "pockets predictability stock returns real time out of sample"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L6434f1ad45a1",
+    "title": "Portfolio Optimization on Multivariate Regime-Switching GARCH Model with Normal Tempered Stable Innovation",
+    "authors": [
+      "Cheng Peng",
+      "Young Shin Kim",
+      "Stefan Mittnik"
+    ],
+    "year": 2022,
+    "abstract": "<jats:p>This paper uses simulation-based portfolio optimization to mitigate the left tail risk of the portfolio. The contribution is twofold. (i) We propose the Markov regime-switching GARCH model with multivariate normal tempered stable innovation (MRS-MNTS-GARCH) to accommodate fat tails, volatility clustering and regime switch. The volatility of each asset independently follows the regime-switch GARCH model, while the correlation of joint innovation of the GARCH models follows the Hidden Markov Model. (ii) We use tail risk measures, namely conditional value-at-risk (CVaR) and conditional drawdown-at-risk (CDaR), in the portfolio optimization. The optimization is performed with the sample paths simulated by the MRS-MNTS-GARCH model. We conduct an empirical study on the performance of optimal portfolios. Out-of-sample tests show that the optimal portfolios with tail measures outperform the optimal portfolio with standard deviation measure and the equally weighted portfolio in various performance measures. The out-of-sample performance of the optimal portfolios is also more robust to suboptimality on the efficient frontier.</jats:p>",
+    "venue": "Journal of Risk and Financial Management",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.3390/jrfm15050230"
+    },
+    "doi": "10.3390/jrfm15050230",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.3390/jrfm15050230",
+    "citation_count": 6,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio allocation risk management"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L952c67f5e60f",
+    "title": "Estimation of Hidden Markov Models and Their Applications in Finance",
+    "authors": [
+      "Anton Tenyakov"
+    ],
+    "year": 2014,
+    "abstract": "Movements of financial variables exhibit extreme fluctuations during periods of economic crisis and times of market uncertainty. They are also affected by institutional policies and intervention of regulatory authorities. These structural changes driving prices and other economic indicators can be captured reasonably by models featuring regime-switching capabilities. Hidden Markov models (HMM) modulating the model parameters to incorporate such regime-switching dynamics have been put forward in recent years, but many of them could still be further improved. In this research, we aim to address some of the inadequacies of previous regime-switching models in terms of their capacity to provide better forecasts and efficiency in estimating parameters. New models are developed, and their corresponding filtering results are obtained and tested on financial data sets. The contributions of this research work include the following: (i) Recursive filtering algorithms are constructed for a regime-switching financial model consistent with no-arbitrage pricing. An application to the filtering and forecasting of futures prices under a multivariate set-up is presented. (ii) The modelling of risk due to market and funding liquidity is considered by capturing the joint dynamics of three time series (Treasury-Eurodollar spread, VIX and S\\\\&P 500 spread-derived metric), which mirror liquidity levels in the financial markets. HMM filters under a multi-regime mean- reverting model are established. (iii) Kalman filtering techniques and the change of reference probability-based filtering methods are integrated to obtain hybrid algorithms. A pairs trading investment strategy is supported by the combined power of both HMM and Kalman filters. It is shown that an investor is able to benefit from the proposed interplay of the two filtering methods. (iv) A zero-delay HMM is devised for the evolution of multivariate foreign exchange rate data under a high-frequency trading environment. Recursive filters for quantities that are functions of a Markov chain are derived, which in turn provide optimal parameter estimates. (v) An algorithm is designed for the efficient calculation of the joint probability function for the occupation time in a Markov-modulated model for asset returns under a general number of economic regimes. The algorithm is constructed with accessible implementation and practical considerations in mind.",
+    "venue": "Scholarship@Western (Western University)",
+    "sources": [
+      "openalex"
+    ],
+    "source_ids": {
+      "openalex": "https://openalex.org/W192762408"
+    },
+    "doi": "",
+    "arxiv_id": "",
+    "url": "https://openalex.org/W192762408",
+    "citation_count": 8,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "hidden Markov model market regime detection finance"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L54d8ca245eca",
+    "title": "How do financial variables impact public debt growth in China? An empirical study based on Markov regime-switching model",
+    "authors": [
+      "Tianbao Zhou",
+      "Zhixin Liu",
+      "Yingying Xu"
+    ],
+    "year": 2024,
+    "abstract": "The deep financial turmoil in China caused by the COVID-19 pandemic has exacerbated fiscal shocks and soaring public debt levels, which raises concerns about the stability and sustainability of China's public debt growth in the future. This paper employs the Markov regime-switching model with time-varying transition probability (TVTP-MS) to investigate the growth pattern of China's public debt and the impact of financial variables such as credit, house prices and stock prices on the growth of public debt. We identify two distinct regimes of China's public debt, i.e., the surge regime with high growth rate and high volatility and the steady regime with low growth rate and low volatility. The main results are twofold. On the one hand, an increase in the growth rate of the financial variables helps to moderate the growth rate of public debt, whereas the effects differ between the two regimes. More specifically, the impacts of credit and house prices are significant in the surge regime, whereas stock prices affect public debt growth significantly in the steady regime. On the other hand, a higher growth rate of financial variables also increases the probability of public debt either staying in or switching to the steady regime. These findings highlight the necessity of aligning financial adjustments with the prevailing public debt regime when developing sustainable fiscal policies.",
+    "venue": "arXiv",
+    "sources": [
+      "arxiv"
+    ],
+    "source_ids": {
+      "arxiv": "2407.02183v1"
+    },
+    "doi": "",
+    "arxiv_id": "2407.02183v1",
+    "url": "https://arxiv.org/pdf/2407.02183v1",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "Markov switching financial returns volatility regime"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L0a77e09f131f",
+    "title": "Real-Time Industry News and the Predictability of Market Returns",
+    "authors": [
+      "Rasoul Foroughfard"
+    ],
+    "year": 2026,
+    "abstract": "<jats:p>This paper examines how shocks to industries' input-intensive and extensive human capital-as well as shocks to their outputs, including production, sales, and inventories-predict the market values of U.S. NAICS sectors and the aggregate market. I assume that industries' market values are linked through input-output connections in a static network, which I estimate directly from the data. Modeling each sector's expected return as a linear function of its network-connected inputs and outputs, I find that the framework explains 40% of the monthly variation in aggregate market returns and, on average, 34% of the variation across sectors, in sample. Out of sample, the model delivers approximately 5% predictive R 2 for the aggregate market. Predictability is strongest for upstream sectors, such as manufacturing and mining, which transmit shocks broadly, and weaker for downstream sectors, such as retail and construction.</jats:p>",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.6661978"
+    },
+    "doi": "10.2139/ssrn.6661978",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.6661978",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "pockets predictability stock returns real time out of sample"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L8d07a42fc914",
+    "title": "Cryptocurrency Returns, Cybercrime and Stock Market Volatility: GAS and Regime Switching Approaches",
+    "authors": [
+      "Kazeem Abimbola Sanusi",
+      "Zandri Dickason-Koekemoer"
+    ],
+    "year": 2022,
+    "abstract": "<jats:p>This study examines the behaviour of cryptocurrencies’ returns to stock market volatility and cybercrime in the South African economy. The study makes us Generalized Autoregressive Score Model (GAS) investigate the time-varying correlation between cryptocurrencies’ returns and cybercrime, and cryptocurrencies’ returns and stock market volatility by making use of daily time series data on different four types of Cryptocurrencies, Bitcoin, Ethereum, Tether and BNB from January 2019 to December 2021. The study also makes use of the regime-switching approach to regime-switching impacts on the cryptocurrencies’ returns. The empirical results obtained showed that cybercrime, on average, has negative impacts on the cryptocurrencies’ returns and the time-varying correlation between stock market volatility and each of the cryptocurrencies’ returns is largely positive. The stock market volatility impact is found to be regime-switching dependent. The study recommends that efforts to reduce cybercrime activities must be reinforced to deepen the use of digital currencies and policy measures must be taken to ensure reduced or moderate stock market volatility.</jats:p>",
+    "venue": "International Journal of Economics and Financial Issues",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.32479/ijefi.13555"
+    },
+    "doi": "10.32479/ijefi.13555",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.32479/ijefi.13555",
+    "citation_count": 1,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "Markov switching financial returns volatility regime"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L2ca90a4e3937",
+    "title": "Modeling Precious Metal Returns through Fractional Jump-Diffusion Processes Combined with Markov Regime-Switching Stochastic Volatility",
+    "authors": [
+      "Martha Carpinteyro",
+      "Francisco Venegas-Martínez",
+      "Alí Aali-Bujari"
+    ],
+    "year": 2021,
+    "abstract": "<jats:p>This paper is aimed at developing a stochastic volatility model that is useful to explain the dynamics of the returns of gold, silver, and platinum during the period 1994–2019. To this end, it is assumed that the precious metal returns are driven by fractional Brownian motions, combined with Poisson processes and modulated by continuous-time homogeneous Markov chains. The calibration is carried out by estimating the Jump Generalized Autoregressive Conditional Heteroscedasticity (Jump-GARCH) and Markov regime-switching models of each precious metal, as well as computing their Hurst exponents. The novelty in this research is the use of non-linear, non-normal, multi-factor, time-varying risk stochastic models, useful for an investors’ decision-making process when they intend to include precious metals in their portfolios as safe-haven assets. The main empirical results are as follows: (1) all metals stay in low volatility most of the time and have long memories, which means that past returns have an effect on current and future returns; (2) silver and platinum have the largest jump sizes; (3) silver’s negative jumps have the highest intensity; and (4) silver reacts more than gold and platinum, and it is also the most volatile, having the highest probability of intensive jumps. Gold is the least volatile, as its percentage of jumps is the lowest and the intensity of its jumps is lower than that of the other two metals. Finally, a set of recommendations is provided for the decision-making process of an average investor looking to buy and sell precious metals.</jats:p>",
+    "venue": "Mathematics",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.3390/math9040407"
+    },
+    "doi": "10.3390/math9040407",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.3390/math9040407",
+    "citation_count": 5,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "Markov switching financial returns volatility regime"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L367848f211d7",
+    "title": "A Hybrid Learning Approach to Detecting Regime Switches in Financial Markets",
+    "authors": [
+      "Peter Akioyamen",
+      "Yi Zhou Tang",
+      "Hussien Hussien"
+    ],
+    "year": 2021,
+    "abstract": "Financial markets are of much interest to researchers due to their dynamic and stochastic nature. With their relations to world populations, global economies and asset valuations, understanding, identifying and forecasting trends and regimes are highly important. Attempts have been made to forecast market trends by employing machine learning methodologies, while statistical techniques have been the primary methods used in developing market regime switching models used for trading and hedging. In this paper we present a novel framework for the detection of regime switches within the US financial markets. Principal component analysis is applied for dimensionality reduction and the k-means algorithm is used as a clustering technique. Using a combination of cluster analysis and classification, we identify regimes in financial markets based on publicly available economic data. We display the efficacy of the framework by constructing and assessing the performance of two trading strategies based on detected regimes.",
+    "venue": "arXiv",
+    "sources": [
+      "arxiv"
+    ],
+    "source_ids": {
+      "arxiv": "2108.05801v1"
+    },
+    "doi": "",
+    "arxiv_id": "2108.05801v1",
+    "url": "https://arxiv.org/pdf/2108.05801v1",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "hidden Markov model market regime detection finance"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L79d805eabeec",
+    "title": "Global Stock Selection with Hidden Markov Model",
+    "authors": [
+      "Nguyet Nguyen",
+      "Dung T. Nguyen"
+    ],
+    "year": 2020,
+    "abstract": "Hidden Markov model (HMM) is a powerful machine-learning method for data regime detection, especially time series data. In this paper, we establish a multi-step procedure for using HMM to select stocks from the global stock market. First, the five important factors of a stock are identified and scored based on its historical performances. Second, HMM is used to predict the regimes of six global economic indicators and find the time periods in the past during which these indicators have a combination of regimes that is similar to those predicted. Then, we analyze the five stock factors of the All country world index (ACWI) in the identified time periods to assign a weighted score for each stock factor and to calculate the composite score of the five factors. Finally, we make a monthly selection of 10% of the global stocks that have the highest composite scores. This strategy is shown to outperform those relying on either ACWI, any single stock factor, or the simple average of the five stock factors.",
+    "venue": "Risks",
+    "sources": [
+      "openalex"
+    ],
+    "source_ids": {
+      "openalex": "https://openalex.org/W3114820096"
+    },
+    "doi": "10.3390/risks9010009",
+    "arxiv_id": "",
+    "url": "https://openalex.org/W3114820096",
+    "citation_count": 14,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "hidden Markov model market regime detection finance"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L1ee1b9ecadf0",
+    "title": "ESG Risk and Market Return Predictability: New Evidence From the Eurozone",
+    "authors": [
+      "Zhiyong Li",
+      "Zhuoran Li",
+      "Weiping Qin"
+    ],
+    "year": 2025,
+    "abstract": "ABSTRACT This study examines the predictive power of incident‐based Environmental, Social and Governance (ESG) risk on the Eurozone stock market returns using a forecast combination method. We find that our constructed indicator shows significant return predictability from both a statistical and economic perspective, with an out‐of‐sample CER gain of 4.55% and a Sharpe ratio of 0.43, consistently outperforming the mean benchmark. Moreover, we find that the predictive power is concentrated during non‐expansion periods. We attribute this mechanism to the firm's fundamentals, cash flow and discount rate channels. Our findings highlight the value of ESG information for investors.",
+    "venue": "European Financial Management",
+    "sources": [
+      "openalex"
+    ],
+    "source_ids": {
+      "openalex": "https://openalex.org/W4409290966"
+    },
+    "doi": "10.1111/eufm.12553",
+    "arxiv_id": "",
+    "url": "https://openalex.org/W4409290966",
+    "citation_count": 14,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "pockets predictability stock returns real time out of sample"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L76e055a65ed5",
+    "title": "Adaptive algorithms for change point detection in financial time series",
+    "authors": [
+      "Alexander Musaev",
+      "Dmitry Grigoriev",
+      "Maxim Kolosov"
+    ],
+    "year": 2024,
+    "abstract": "<jats:p xml:lang=\"fr\"><p>The detection of change points in chaotic and non-stationary time series presents a critical challenge for numerous practical applications, particularly in fields such as finance, climatology, and engineering. Traditional statistical methods, grounded in stationary models, are often ill-suited to capture the dynamics of processes governed by stochastic chaos. This paper explores modern approaches to change point detection, focusing on multivariate regression analysis and machine learning techniques. We demonstrate the limitations of conventional models and propose hybrid methods that leverage long-term correlations and metric-based learning to improve detection accuracy. Our study presents comparative analyses of existing early detection techniques and introduces advanced algorithms tailored to non-stationary environments, including online and offline segmentation strategies. By applying these methods to financial market data, particularly in monitoring currency pairs like EUR/USD, we illustrate how dynamic filtering and multiregression analysis can significantly enhance the identification of change points. The results underscore the importance of adapting detection models to the specific characteristics of chaotic data, offering practical solutions for improving decision-making in complex systems. Key findings reveal that while no universal solution exists for detecting change points in chaotic time series, integrating machine learning and multivariate approaches allows for more robust and adaptive forecasting models. The work highlights the potential for future advancements in neural network applications and multi-expert decision systems, further enhancing predictive accuracy in volatile environments.</p></jats:p>",
+    "venue": "AIMS Mathematics",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.3934/math.20241674"
+    },
+    "doi": "10.3934/math.20241674",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.3934/math.20241674",
+    "citation_count": 3,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "change point detection financial time series regime shift"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Ldb1e20488fa7",
+    "title": "Change Point Detection and Trend Analysis for Financial Time Series",
+    "authors": [
+      "Hengzhu Liu",
+      "Ping Xiong",
+      "Dawei Jin",
+      "Lingzhi Yi"
+    ],
+    "year": 2023,
+    "abstract": "",
+    "venue": "2023 9th International Conference on Big Data Computing and Communications (BigCom)",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.1109/bigcom61073.2023.00026"
+    },
+    "doi": "10.1109/bigcom61073.2023.00026",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.1109/bigcom61073.2023.00026",
+    "citation_count": 1,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "change point detection financial time series regime shift"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Lc895846bd4d5",
+    "title": "Bayesian Change Point Detection in Financial Time Series: Evidence from the Hong Kong Stock Market",
+    "authors": [
+      "Zhebing Yan"
+    ],
+    "year": 2025,
+    "abstract": "",
+    "venue": "Proceedings of the 2025 International Symposium on Machine Learning and Social Computing",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.1145/3778450.3778502"
+    },
+    "doi": "10.1145/3778450.3778502",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.1145/3778450.3778502",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "change point detection financial time series regime shift"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L1bed31d8addc",
+    "title": "A Markov regime switching approach to estimating the volatility of Johannesburg Stock Exchange (JSE) returns",
+    "authors": [
+      "Emmanuel K. Oseifuah",
+      "Carl H. Korkpoe"
+    ],
+    "year": 2019,
+    "abstract": "<jats:p>The study used the Markov regime switching model to investigate the presence of regimes in the volatility dynamics of the returns of JSE All-Share Index (ALSI). Volatility regimes are as a result of sudden changes in the underlying economy generating the market returns. In all, twelve candidate models were fitted to the data. Estimates from the regime switching model were compared to the industry standard non-switching GARCH (1,1) using the Deviance Information Criteria (DIC). The results show that the two-regime switching EGARCH model with skewed Student t innovations describes better the return of the JSE Index. Additionally, we backtest the model results in order to confirm our findings that the two-regime switching EGARCH is the best of the models for the sample period.</jats:p>",
+    "venue": "Investment Management and Financial Innovations",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.21511/imfi.16(1).2019.17"
+    },
+    "doi": "10.21511/imfi.16(1).2019.17",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.21511/imfi.16(1).2019.17",
+    "citation_count": 2,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "Markov switching financial returns volatility regime"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Lea7380837fd2",
+    "title": "The Regime Examination of Nigeria Exchange Rate Volatility: Evidence from Markov Regime Switching Autoregressive Approach",
+    "authors": [
+      "Zira S.D.",
+      "Adejumo O.A."
+    ],
+    "year": 2023,
+    "abstract": "<jats:p>Inarguably, the escalation in dollar rates and the price instability in the Nigerian economy underwent significant structural and institutional changes. In assessing the importance of understanding exchange rates, it becomes imperative to build reliable models for predicting the volatility of exchange rates of home currency. Hence, this study aims to model the Nigerian exchange rate volatility using the Markov regime-switching model. The study analyses the Nigerian exchange rate returns in two and three distinct regimes by employing the Markov regime-switching autoregressive (MS-AR) model with data from 2nd January 2018 to 7th September 2020. Four MS-AR candidate models were estimated for the exchange rate series. Based on the least AIC value, MS(3)-AR(2) was returned as the most parsimonious model among the four candidate models. The MS(3)-AR(2) analysis established a high probability that the returns system remains in the liquidation and awareness states. It implied that only unconventional or severe events could switch the series from regime 2 (liquidation phase) and regime 3 (awareness). While there is a low probability that the system will stay in an imbalanced regime implies high switching of regime 1. Furthermore, an average duration period of 2 days, six days and five days were estimated for the imbalance, liquidation and awareness regimes, respectively. Thus, the findings, i.e. imbalance and liquidation regimes’ identification and their average durations, show that the Naira in the foreign exchange market is not favourable for investors to trade. The study recommends that the Nigerian government should direct more efforts towards improving the performance of the Naira in the foreign exchange market to make the market more favourable for investors. Specifically, the CBN should develop new strategies towards tackling the behaviour of the Nigerian exchange rate when in a liquidation state.</jats:p>",
+    "venue": "African Journal of Accounting and Financial Research",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.52589/ajafr-7mhoeggm"
+    },
+    "doi": "10.52589/ajafr-7mhoeggm",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.52589/ajafr-7mhoeggm",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "Markov switching financial returns volatility regime"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L4803fee4baa1",
+    "title": "Breadth Momentum and Hidden Markov Regime Detection: A Composite Signal for Tactical Equity Allocation",
+    "authors": [
+      "Vivien Pei Wen Chua"
+    ],
+    "year": 2026,
+    "abstract": "<jats:p>We apply a composite regime gate to a tactical allocation strategy on a universe of 19 country equity exchange-traded funds (ETFs). The composite is constructed by combining two regime detectors, the breadth-momentum signal and a Hidden Markov Model (HMM). We show that the two signals are complementary rather than redundant. Breadth is a cross-sectional measure of how broadly the universe is participating, while HMM is a time-series measure of the statistical state of the basket. Each signal alone produces many false positive bear flags, while the combination of two signals agrees at the major regime transitions of the backtested period. We use 4 equity-based features and 2 rate-based features. The defensive leg rotates between long-duration Treasuries (TLT) and cash. Over the period from January 2004 to December 2025, the composite strategy delivers a Sharpe ratio of 0.72 and a maximum drawdown of-23.1%, compared to 0.53 and-58.0% for the equal-weighted basket, 0.46 and-57.4% for MSCI EAFE, and 0.77 and-50.8% for SPY buy-and-hold. The composite strategy more than halves the maximum drawdown of the passive benchmarks and exceeds SPY's compound annual growth rate by 1.5%.</jats:p>",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.6965179"
+    },
+    "doi": "10.2139/ssrn.6965179",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.6965179",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "hidden Markov model market regime detection finance"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Lbb276f6c90b9",
+    "title": "Identifiable Regime Detection in Pension Fund Networks via Sticky Hidden Markov Models",
+    "authors": [
+      "Megang Nkamga Junile Staures",
+      "Audrius Kabašinskas"
+    ],
+    "year": 2026,
+    "abstract": "<jats:p>Wedocument anetwork-level vulnerability in pension fund systems: lifecycle allocation regulation, designed to protect individual participants, compresses cross-fund return dynamics to the point where provider choice offers little diversification. Using daily net asset value data from second-pillar pension funds in Lithuania over 2019–2025, we find that a single common factor explains at least 73% of total return variance even in the calmest observed periods. We develop an unsupervised regime-detection framework combining a PCA-based absorption ratio, DTW hierarchical clustering, and a Gaussian hidden Markov model with a data-driven crisis threshold. The HMM specification is supported by a dual empirical calibration of the stickiness prior and cross-validated against a fully Bayesian sticky HMM. The framework identifies three latent regimes in which elevated systemic co-movement is the structural norm rather than an exceptional state and shows that funds group primarily by age cohort rather than by provider. The absorption ratio has no significant relationship with global equity benchmarks in either calm or high-risk regimes, indicating that systemic stress is network-internal rather than imported. Cluster-level tracking-error amplification of 1.09× to 1.23× during high-risk episodes confirms that even conservative funds serving retirement-age participants are not insulated.</jats:p>",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.20944/preprints202606.0111.v1"
+    },
+    "doi": "10.20944/preprints202606.0111.v1",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.20944/preprints202606.0111.v1",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "hidden Markov model market regime detection finance"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Lcc8913263423",
+    "title": "Structural Breaks in Financial Time Series",
+    "authors": [
+      "Elena Andreou",
+      "Éric Ghysels"
+    ],
+    "year": 2009,
+    "abstract": "",
+    "venue": "",
+    "sources": [
+      "openalex"
+    ],
+    "source_ids": {
+      "openalex": "https://openalex.org/W1497363055"
+    },
+    "doi": "10.1007/978-3-540-71297-8_37",
+    "arxiv_id": "",
+    "url": "https://openalex.org/W1497363055",
+    "citation_count": 88,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "structural breaks asset returns volatility financial time series"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L92315c248b57",
+    "title": "Volatility in stock returns for new EU member states: Markov regime switching model",
+    "authors": [
+      "Tomoe Moore",
+      "Ping Wang"
+    ],
+    "year": 2007,
+    "abstract": "",
+    "venue": "International Review of Financial Analysis",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.1016/j.irfa.2007.03.006"
+    },
+    "doi": "10.1016/j.irfa.2007.03.006",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.1016/j.irfa.2007.03.006",
+    "citation_count": 44,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "Markov switching financial returns volatility regime"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L2452f27ac877",
+    "title": "Risk management and portfolio selection using \\alpha-stable regime switching models",
+    "authors": [
+      "Andreas Reuss",
+      "Pablo Olivares",
+      "Luis Seco",
+      "Rudi Zagst"
+    ],
+    "year": 2016,
+    "abstract": "",
+    "venue": "Applied Mathematical Sciences",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.12988/ams.2016.512722"
+    },
+    "doi": "10.12988/ams.2016.512722",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.12988/ams.2016.512722",
+    "citation_count": 2,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio allocation risk management"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L2b2161af6dd4",
+    "title": "Structural Breaks in Financial Time Series",
+    "authors": [
+      "Elena Andreou",
+      "Eric Ghysels"
+    ],
+    "year": 2011,
+    "abstract": "",
+    "venue": "SSRN Electronic Journal",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.935971"
+    },
+    "doi": "10.2139/ssrn.935971",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.935971",
+    "citation_count": 1,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "structural breaks asset returns volatility financial time series"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Lb244c06a1d0a",
+    "title": "Regime Detection in Sub-Saharan Africa Equity Markets A Hidden Markov Model Approach",
+    "authors": [
+      "Hope Korkpoe Carl",
+      "Howard Nathaniel"
+    ],
+    "year": 2021,
+    "abstract": "",
+    "venue": "Journal of Economics and International Finance",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.5897/jeif2021.1117"
+    },
+    "doi": "10.5897/jeif2021.1117",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.5897/jeif2021.1117",
+    "citation_count": 1,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "hidden Markov model market regime detection finance"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Lee37be49ce0b",
+    "title": "Risk On-Risk Off: A Regime Switching Model for Active Portfolio Management",
+    "authors": [
+      "José Pablo Dapena",
+      "Juan Andrés Serur",
+      "Julián Ricardo Siri"
+    ],
+    "year": 2020,
+    "abstract": "",
+    "venue": "SSRN Electronic Journal",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.3509895"
+    },
+    "doi": "10.2139/ssrn.3509895",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.3509895",
+    "citation_count": 1,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio allocation risk management"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Lf43fed3efc2e",
+    "title": "Automatic Offset Detection in GPS Time Series by Change Point Approach",
+    "authors": [
+      "Giuseppe Nunnari",
+      "Flavio Cannavo"
+    ],
+    "year": 2019,
+    "abstract": "",
+    "venue": "Proceedings of the 16th International Conference on Informatics in Control, Automation and Robotics",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.5220/0007951503770383"
+    },
+    "doi": "10.5220/0007951503770383",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.5220/0007951503770383",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "change point detection financial time series regime shift"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L62ae98140a6e",
+    "title": "Multivariate Regime Switching GARCH Model Application to Portfolio and Risk Management",
+    "authors": [
+      "Zhi De Khoo"
+    ],
+    "year": 2020,
+    "abstract": "",
+    "venue": "SSRN Electronic Journal",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.3580106"
+    },
+    "doi": "10.2139/ssrn.3580106",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.3580106",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio allocation risk management"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L45386c088e21",
+    "title": "Structural breaks in volatility: the case of UK sector returns",
+    "authors": [
+      "David G. McMillan",
+      "Mark E. Wohar"
+    ],
+    "year": 2011,
+    "abstract": "",
+    "venue": "Applied Financial Economics",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.1080/09603107.2011.564131"
+    },
+    "doi": "10.1080/09603107.2011.564131",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.1080/09603107.2011.564131",
+    "citation_count": 17,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "structural breaks asset returns volatility financial time series"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Lf5c248f2d1f2",
+    "title": "An algorithmic trading system based on a stacked generalization model and hidden Markov model in the foreign exchange market",
+    "authors": [
+      "Ali Fereydooni",
+      "Masoud Mahootchi"
+    ],
+    "year": 2023,
+    "abstract": "",
+    "venue": "Global Finance Journal",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.1016/j.gfj.2023.100825"
+    },
+    "doi": "10.1016/j.gfj.2023.100825",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.1016/j.gfj.2023.100825",
+    "citation_count": 14,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "hidden Markov model market regime detection finance"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L61d4009ac457",
+    "title": "ONLINE CHANGE-POINT DETECTION IN FINANCIAL TIME SERIES: CHALLENGES AND EXPERIMENTAL EVIDENCE WITH FREQUENTIST AND BAYESIAN SETUPS",
+    "authors": [
+      "VASILE GEORGESCU"
+    ],
+    "year": 2012,
+    "abstract": "",
+    "venue": "Methods for Decision Making in an Uncertain Environment",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.1142/9789814415774_0009"
+    },
+    "doi": "10.1142/9789814415774_0009",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.1142/9789814415774_0009",
+    "citation_count": 2,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "change point detection financial time series regime shift"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "La1c8efd8ec18",
+    "title": "A Empirical Study on the Relationship Between Idiosyncratic Volatility and the Excess Returns of the Portfolio Using Markov Switching Model",
+    "authors": [
+      "윤병조"
+    ],
+    "year": 2016,
+    "abstract": "",
+    "venue": "Korean Journal of Financial Engineering",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.35527/kfedoi.2016.15.1.004"
+    },
+    "doi": "10.35527/kfedoi.2016.15.1.004",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.35527/kfedoi.2016.15.1.004",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "Markov switching financial returns volatility regime"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L17ea5343470f",
+    "title": "Nonparametric Regime Segmentation in Financial Time Series via Hilbert-ICEEMDAN and Penalized Change-Point Inference",
+    "authors": [
+      "Devansh Garg"
+    ],
+    "year": 2025,
+    "abstract": "",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.5611890"
+    },
+    "doi": "10.2139/ssrn.5611890",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.5611890",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "change point detection financial time series regime shift"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Lb0395a97a720",
+    "title": "Bayesian Change-Point Detection in Multiple Simulated and Real Financial Time Series",
+    "authors": [
+      "Jiahui Huang"
+    ],
+    "year": 2025,
+    "abstract": "",
+    "venue": "Proceedings of the 2025 International Conference on Economic Management and Big Data Application",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.1145/3770177.3770326"
+    },
+    "doi": "10.1145/3770177.3770326",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.1145/3770177.3770326",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "change point detection financial time series regime shift"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L5a9e1bd415f7",
+    "title": "Reviewer #1 (Public review): Regime shift detection and neurocomputational substrates for under and overreactions to change",
+    "authors": [],
+    "year": 2026,
+    "abstract": "",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.7554/elife.104684.5.sa1"
+    },
+    "doi": "10.7554/elife.104684.5.sa1",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.7554/elife.104684.5.sa1",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "change point detection financial time series regime shift"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L1c70dbc04e72",
+    "title": "Reviewer #3 (Public review): Regime shift detection and neurocomputational substrates for under and overreactions to change",
+    "authors": [],
+    "year": 2026,
+    "abstract": "",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.7554/elife.104684.5.sa2"
+    },
+    "doi": "10.7554/elife.104684.5.sa2",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.7554/elife.104684.5.sa2",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "change point detection financial time series regime shift"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Ld543334718b0",
+    "title": "eLife Assessment: Regime shift detection and neurocomputational substrates for under and overreactions to change",
+    "authors": [
+      "Andreea Oliviana Diaconescu"
+    ],
+    "year": 2026,
+    "abstract": "",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.7554/elife.104684.5.sa0"
+    },
+    "doi": "10.7554/elife.104684.5.sa0",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.7554/elife.104684.5.sa0",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "change point detection financial time series regime shift"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L04c8d6304888",
+    "title": "Change-Point Detection in Financial Time Series Using the PELT Algorithm: Simulation Optimization and Empirical Analysis",
+    "authors": [
+      "Ru Jia"
+    ],
+    "year": 2025,
+    "abstract": "",
+    "venue": "Proceedings of the 2025 8th International Conference on Computer Information Science and Artificial Intelligence",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.1145/3773365.3773532"
+    },
+    "doi": "10.1145/3773365.3773532",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.1145/3773365.3773532",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "change point detection financial time series regime shift"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Lf89bdd701bbe",
+    "title": "Regime Detection and Forecasting of Financial Indicators in Electric Transmission Sector Companies Using Hidden Markov Models",
+    "authors": [
+      "Giovanni Maniezzo",
+      "Elder Oroski",
+      "Luis Melo Júnior"
+    ],
+    "year": 2026,
+    "abstract": "",
+    "venue": "Proceedings of the 15th International Conference on Data Science, Technology and Applications",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.5220/0015002700004091"
+    },
+    "doi": "10.5220/0015002700004091",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.5220/0015002700004091",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "hidden Markov model market regime detection finance"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L409b5979d6b0",
+    "title": "Out-of-sample predictability of high-frequency stock returns on the Tokyo Stock Exchange",
+    "authors": [
+      "Masato Ubukata",
+      "Toshiaki Watanabe"
+    ],
+    "year": 2026,
+    "abstract": "",
+    "venue": "The Japanese Economic Review",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.1007/s42973-026-00255-7"
+    },
+    "doi": "10.1007/s42973-026-00255-7",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.1007/s42973-026-00255-7",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "pockets predictability stock returns real time out of sample"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Lde2fbfbb1376",
+    "title": "Impact of U.S. Excess Returns on Global Stock Markets: Insights from International Stock Return Predictability",
+    "authors": [
+      "Yangli Guo"
+    ],
+    "year": 2024,
+    "abstract": "",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.5008951"
+    },
+    "doi": "10.2139/ssrn.5008951",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.5008951",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "pockets predictability stock returns real time out of sample"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L531b45dda204",
+    "title": "Is Regime Switching in Stock Returns Important in Portfolio Decisions?",
+    "authors": [
+      "Jun Tu"
+    ],
+    "year": 2010,
+    "abstract": "The stock market displays regime switching between upturns and downturns. This paper provides a Bayesian framework for making portfolio decisions that takes this regime switching into account, together with asset pricing model uncertainty and parameter uncertainty. The findings reveal that the economic value of accounting for regimes is substantially independent of whether or not model and parameter uncertainties are incorporated: the certainty-equivalent losses associated with ignoring regime switching are generally above 2% per year and can be as high as 10%. These results suggest that the more realistic regime switching model is fundamentally different from the commonly used single-state model, and hence should be employed instead in portfolio decisions irrespective of concerns about model or parameter uncertainty.",
+    "venue": "Management Science",
+    "sources": [
+      "openalex"
+    ],
+    "source_ids": {
+      "openalex": "https://openalex.org/W2031308451"
+    },
+    "doi": "10.1287/mnsc.1100.1181",
+    "arxiv_id": "",
+    "url": "https://openalex.org/W2031308451",
+    "citation_count": 123,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio allocation risk management"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Lde7805356ca9",
+    "title": "Extensions to IVX methods of inference for return predictability",
+    "authors": [
+      "Matei Demetrescu",
+      "Iliyan Georgiev",
+      "Paulo M.M. Rodrigues",
+      "A.M. Robert Taylor"
+    ],
+    "year": 2022,
+    "abstract": "The contribution of this paper is threefold. First, we demonstrate that, provided either a suitable bootstrap implementation is employed or heteroskedasticity-consistent standard errors are used, the IVX-based predictability tests of Kostakis et al. (2015) retain asymptotically valid inference under the null hypothesis under considerably weaker assumptions on the innovations than are required by Kostakis et al. (2015). Second, under the same assumptions, we develop asymptotically valid bootstrap implementations of the IVX tests. Monte Carlo simulations show that the bootstrap tests deliver considerably more accurate finite sample inference than the asymptotic implementations of the tests under certain problematic parameter constellations, most notably for one-sided testing, and where multiple predictors are included. Third, we show how sub-sample implementations of the IVX approach can be used to develop asymptotically valid one-sided and two-sided tests for the presence of temporary windows of predictability.",
+    "venue": "Journal of Econometrics",
+    "sources": [
+      "openalex"
+    ],
+    "source_ids": {
+      "openalex": "https://openalex.org/W3158512888"
+    },
+    "doi": "10.1016/j.jeconom.2022.02.007",
+    "arxiv_id": "",
+    "url": "https://openalex.org/W3158512888",
+    "citation_count": 15,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "pockets predictability stock returns real time out of sample"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L7917379e3152",
+    "title": "Markov Switching",
+    "authors": [
+      "Yong Song",
+      "Tomasz Woźniak"
+    ],
+    "year": 2020,
+    "abstract": "Markov switching models are a popular family of models that introduces time-variation in the parameters in the form of their state- or regime-specific values. Importantly, this time-variation is governed by a discrete-valued latent stochastic process with limited memory. More specifically, the current value of the state indicator is determined only by the value of the state indicator from the previous period, thus the Markov property, and the transition matrix. The latter characterizes the properties of the Markov process by determining with what probability each of the states can be visited next period, given the state in the current period. This setup decides on the two main advantages of the Markov switching models. Namely, the estimation of the probability of state occurrences in each of the sample periods by using filtering and smoothing methods and the estimation of the state-specific parameters. These two features open the possibility for improved interpretations of the parameters associated with specific regimes combined with the corresponding regime probabilities, as well as for improved forecasting performance based on persistent regimes and parameters characterizing them.",
+    "venue": "arXiv",
+    "sources": [
+      "arxiv"
+    ],
+    "source_ids": {
+      "arxiv": "2002.03598v1"
+    },
+    "doi": "",
+    "arxiv_id": "2002.03598v1",
+    "url": "https://arxiv.org/pdf/2002.03598v1",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "Markov switching financial returns volatility regime"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L6a2a90eaa26b",
+    "title": "Identification Verification for Structural Vector Autoregressions with Sparse Heterogeneous Markov Switching Heteroskedasticity",
+    "authors": [
+      "Fei Shang",
+      "Tomasz Woźniak"
+    ],
+    "year": 2026,
+    "abstract": "We propose a structural vector autoregressive model with a new and flexible specification of the volatility process which we call Sparse Heterogeneous Markov-Switching Heteroskedasticity. In this model, the conditional variance of each structural shock changes in time according to its own Markov process. Additionally, it features a sparse representation of Markov processes, in which the number of regimes is set to exceed that of the data-generating process, with some regimes allowed to have zero occurrences throughout the sample. We complement these developments with a definition of a new distribution for normalised conditional variances that facilitates Gibbs sampling and identification verification. In effect, our model: (i) normalises the system and estimates the structural parameters more precisely than popular alternatives; (ii) can be used to verify homoskedasticity reliably and, thus, inform identification through heteroskedasticity; and (iii) features excellent forecasting performance comparable with Stochastic Volatility. Finally, revisiting a prominent macro-financial structural system, we provide evidence for the identification of the US monetary policy shock via heteroskedasticity, with estimates consistent with those reported in the literature.",
+    "venue": "arXiv",
+    "sources": [
+      "arxiv"
+    ],
+    "source_ids": {
+      "arxiv": "2603.16035v1"
+    },
+    "doi": "",
+    "arxiv_id": "2603.16035v1",
+    "url": "https://arxiv.org/pdf/2603.16035v1",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "Markov switching financial returns volatility regime"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L99ea57aac6ad",
+    "title": "Regime Switching Optimal Growth Model with Risk Sensitive Preferences",
+    "authors": [
+      "Anindya Goswami",
+      "Nimit Rana",
+      "Tak Kuen Siu"
+    ],
+    "year": 2021,
+    "abstract": "We consider a risk-sensitive optimization of consumption-utility on infinite time horizon where the one-period investment gain depends on an underlying economic state whose evolution over time is assumed to be described by a discrete-time, finite-state, Markov chain. We suppose that the production function also depends on a sequence of i.i.d. random shocks. For the sake of generality, the utility and the production functions are allowed to be unbounded from above. Under the Markov regime-switching model, it is shown that the value function of optimization problem satisfies an optimality equation and that the optimality equation has a unique solution in a particular class of functions. Furthermore, we show that an optimal policy exists in the class of stationary policies. We also derive the Euler equation of optimal consumption. Furthermore, the existence of the unique joint stationary distribution of the optimal growth process and the underlying regime process is examined. Finally, we present a numerical solution by considering power utility and some hypothetical values of parameters in a regime switching extension of Cobb-Douglas production rate function.",
+    "venue": "arXiv",
+    "sources": [
+      "arxiv"
+    ],
+    "source_ids": {
+      "arxiv": "2110.15025v2"
+    },
+    "doi": "",
+    "arxiv_id": "2110.15025v2",
+    "url": "https://arxiv.org/pdf/2110.15025v2",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "Markov switching financial returns volatility regime"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L2fad3e7796bc",
+    "title": "Modeling Time-Varying Volatility in Financial Returns: Evidence from the Bond Markets",
+    "authors": [
+      "Cristina Amado",
+      "Helinä Laakkonen"
+    ],
+    "year": 2014,
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>The “unusually uncertain” phase in the global financial markets has inspired many researchers to study the effects of ambiguity (or “Knightian uncertainty”) on the decisions made by investors and their implications for the capital markets. We contribute to this literature by using a modified version of the time-varying GARCH model of Amado and Teräsvirta (2013) to analyze whether the increasing uncertainty has caused excess volatility in the US and European government bond markets. In our model, volatility is multiplicatively decomposed into two time-varying conditional components: the first being captured by a stable GARCH(1,1) process and the second driven by the level of uncertainty in the financial market.</jats:p>",
+    "venue": "Essays in Nonlinear Time Series Econometrics",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.1093/acprof:oso/9780199679959.003.0006"
+    },
+    "doi": "10.1093/acprof:oso/9780199679959.003.0006",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.1093/acprof:oso/9780199679959.003.0006",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "structural breaks asset returns volatility financial time series"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Laa7fb725f5e7",
+    "title": "Implementation and Learning of Quantum Hidden Markov Models",
+    "authors": [
+      "Vanio Markov",
+      "Vladimir Rastunkov",
+      "Amol Deshmukh",
+      "Daniel Fry",
+      "Charlee Stefanski"
+    ],
+    "year": 2022,
+    "abstract": "In this article, we use the theory of quantum channels and open quantum systems to provide an efficient unitary characterization of a class of stochastic generators known as quantum hidden Markov models (QHMMs). By utilizing the unitary characterization, we demonstrate that any QHMM can be implemented as a quantum circuit with mid-circuit measurement. We prove that QHMMs are more compact and more expressive definitions of stochastic process languages compared to the equivalent classical hidden Markov models (HMMs). Starting with the formulation of QHMMs as quantum channels, we employ Stinespring's construction to represent these models as unitary quantum circuits with mid-circuit measurement. By utilizing the unitary parameterization of QHMMs, we define a formal QHMM learning model. The model formalizes the empirical distributions of target stochastic process languages, defines hypothesis space of quantum circuits, and introduces an empirical stochastic divergence measure - hypothesis fitness - as a success criterion for learning. We demonstrate that the learning model has a smooth search landscape due to the continuity of Stinespring's dilation. The smooth mapping between the hypothesis and fitness spaces enables the development of efficient heuristic and gradient descent learning algorithms. We propose two practical learning algorithms for QHMMs. The first algorithm is a hyperparameter-adaptive evolutionary search. The second algorithm learns the QHMM as a quantum ansatz circuit using a multi-parameter non-linear optimization technique.",
+    "venue": "arXiv",
+    "sources": [
+      "arxiv"
+    ],
+    "source_ids": {
+      "arxiv": "2212.03796v4"
+    },
+    "doi": "",
+    "arxiv_id": "2212.03796v4",
+    "url": "https://arxiv.org/pdf/2212.03796v4",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "hidden Markov model market regime detection finance"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L7fd53bdcb119",
+    "title": "Context-specific kernel-based hidden Markov model for time series analysis",
+    "authors": [
+      "Carlos Puerto-Santana",
+      "Concha Bielza",
+      "Pedro Larrañaga",
+      "Gustav Eje Henter"
+    ],
+    "year": 2023,
+    "abstract": "Traditional hidden Markov models have been a useful tool to understand and model stochastic dynamic data; in the case of non-Gaussian data, models such as mixture of Gaussian hidden Markov models can be used. However, these suffer from the computation of precision matrices and have a lot of unnecessary parameters. As a consequence, such models often perform better when it is assumed that all variables are independent, a hypothesis that may be unrealistic. Hidden Markov models based on kernel density estimation are also capable of modeling non-Gaussian data, but they assume independence between variables. In this article, we introduce a new hidden Markov model based on kernel density estimation, which is capable of capturing kernel dependencies using context-specific Bayesian networks. The proposed model is described, together with a learning algorithm based on the expectation-maximization algorithm. Additionally, the model is compared to related HMMs on synthetic and real data. From the results, the benefits in likelihood and classification accuracy from the proposed model are quantified and analyzed.",
+    "venue": "arXiv",
+    "sources": [
+      "arxiv"
+    ],
+    "source_ids": {
+      "arxiv": "2301.09870v2"
+    },
+    "doi": "",
+    "arxiv_id": "2301.09870v2",
+    "url": "https://arxiv.org/pdf/2301.09870v2",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "hidden Markov model market regime detection finance"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L003860dda628",
+    "title": "Statistical identification with hidden Markov models of large order splitting strategies in an equity market",
+    "authors": [
+      "Gabriella Vaglica",
+      "Fabrizio Lillo",
+      "Rosario N. Mantegna"
+    ],
+    "year": 2010,
+    "abstract": "Large trades in a financial market are usually split into smaller parts and traded incrementally over extended periods of time. We address these large trades as hidden orders. In order to identify and characterize hidden orders we fit hidden Markov models to the time series of the sign of the tick by tick inventory variation of market members of the Spanish Stock Exchange. Our methodology probabilistically detects trading sequences, which are characterized by a net majority of buy or sell transactions. We interpret these patches of sequential buying or selling transactions as proxies of the traded hidden orders. We find that the time, volume and number of transactions size distributions of these patches are fat tailed. Long patches are characterized by a high fraction of market orders and a low participation rate, while short patches have a large fraction of limit orders and a high participation rate. We observe the existence of a buy-sell asymmetry in the number, average length, average fraction of market orders and average participation rate of the detected patches. The detected asymmetry is clearly depending on the local market trend. We also compare the hidden Markov models patches with those obtained with the segmentation method used in Vaglica {\\it et al.} (2008) and we conclude that the former ones can be interpreted as a partition of the latter ones.",
+    "venue": "arXiv",
+    "sources": [
+      "arxiv"
+    ],
+    "source_ids": {
+      "arxiv": "1003.2981v1"
+    },
+    "doi": "",
+    "arxiv_id": "1003.2981v1",
+    "url": "https://arxiv.org/pdf/1003.2981v1",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "hidden Markov model market regime detection finance"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L243831d434b1",
+    "title": "Hidden Markov Models and their Application for Predicting Failure Events",
+    "authors": [
+      "Paul Hofmann",
+      "Zaid Tashman"
+    ],
+    "year": 2020,
+    "abstract": "We show how Markov mixed membership models (MMMM) can be used to predict the degradation of assets. We model the degradation path of individual assets, to predict overall failure rates. Instead of a separate distribution for each hidden state, we use hierarchical mixtures of distributions in the exponential family. In our approach the observation distribution of the states is a finite mixture distribution of a small set of (simpler) distributions shared across all states. Using tied-mixture observation distributions offers several advantages. The mixtures act as a regularization for typically very sparse problems, and they reduce the computational effort for the learning algorithm since there are fewer distributions to be found. Using shared mixtures enables sharing of statistical strength between the Markov states and thus transfer learning. We determine for individual assets the trade-off between the risk of failure and extended operating hours by combining a MMMM with a partially observable Markov decision process (POMDP) to dynamically optimize the policy for when and how to maintain the asset.",
+    "venue": "arXiv",
+    "sources": [
+      "arxiv"
+    ],
+    "source_ids": {
+      "arxiv": "2005.09971v1"
+    },
+    "doi": "",
+    "arxiv_id": "2005.09971v1",
+    "url": "https://arxiv.org/pdf/2005.09971v1",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "hidden Markov model market regime detection finance"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Lc9a102243258",
+    "title": "A Markov switching model of the conditional volatility of crude oil futures prices",
+    "authors": [
+      "Wai Mun Fong",
+      "Kim Hock See"
+    ],
+    "year": 2002,
+    "abstract": "",
+    "venue": "Energy Economics",
+    "sources": [
+      "openalex"
+    ],
+    "source_ids": {
+      "openalex": "https://openalex.org/W1995897294"
+    },
+    "doi": "10.1016/s0140-9883(01)00087-1",
+    "arxiv_id": "",
+    "url": "https://openalex.org/W1995897294",
+    "citation_count": 201,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "Markov switching financial returns volatility regime"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L6d4759585643",
+    "title": "Interpreting the crude oil price movements: Evidence from the Markov regime switching model",
+    "authors": [
+      "Yue‐Jun Zhang",
+      "Lu Zhang"
+    ],
+    "year": 2015,
+    "abstract": "",
+    "venue": "Applied Energy",
+    "sources": [
+      "openalex"
+    ],
+    "source_ids": {
+      "openalex": "https://openalex.org/W2059916858"
+    },
+    "doi": "10.1016/j.apenergy.2015.01.005",
+    "arxiv_id": "",
+    "url": "https://openalex.org/W2059916858",
+    "citation_count": 127,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "Markov switching financial returns volatility regime"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L16a677781ec8",
+    "title": "A Neural network enhanced hidden Markov model for tourism demand forecasting",
+    "authors": [
+      "Yuan Yao",
+      "Yi Cao"
+    ],
+    "year": 2020,
+    "abstract": "",
+    "venue": "Applied Soft Computing",
+    "sources": [
+      "openalex"
+    ],
+    "source_ids": {
+      "openalex": "https://openalex.org/W3034529496"
+    },
+    "doi": "10.1016/j.asoc.2020.106465",
+    "arxiv_id": "",
+    "url": "https://openalex.org/W3034529496",
+    "citation_count": 37,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "hidden Markov model market regime detection finance"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L3af078e93d0c",
+    "title": "The Predictive Power of Financial Stress on the Financial Markets Dynamics: Hidden Markov Model",
+    "authors": [
+      "Hayet Soltani",
+      "Mouna Boujelbène Abbes"
+    ],
+    "year": 2022,
+    "abstract": "",
+    "venue": "Journal of Economics and Finance",
+    "sources": [
+      "openalex"
+    ],
+    "source_ids": {
+      "openalex": "https://openalex.org/W4292510721"
+    },
+    "doi": "10.1007/s12197-022-09600-z",
+    "arxiv_id": "",
+    "url": "https://openalex.org/W4292510721",
+    "citation_count": 14,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "hidden Markov model market regime detection finance"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L28abc0bbc094",
+    "title": "Conditional out-of-sample predictability of aggregate equity returns and aggregate equity return volatility using economic variables",
+    "authors": [
+      "Nima Nonejad"
+    ],
+    "year": 2023,
+    "abstract": "",
+    "venue": "Journal of Empirical Finance",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.1016/j.jempfin.2022.11.009"
+    },
+    "doi": "10.1016/j.jempfin.2022.11.009",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.1016/j.jempfin.2022.11.009",
+    "citation_count": 5,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "pockets predictability stock returns real time out of sample"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L06a441e34b92",
+    "title": "In-Sample and Out-of-Sample Predictability of Cryptocurrency Returns",
+    "authors": [
+      "Kyungjin Park",
+      "Hojin Lee"
+    ],
+    "year": 2023,
+    "abstract": "",
+    "venue": "East Asian Economic Review",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.11644/kiep.eaer.2023.27.3.423"
+    },
+    "doi": "10.11644/kiep.eaer.2023.27.3.423",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.11644/kiep.eaer.2023.27.3.423",
+    "citation_count": 2,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "pockets predictability stock returns real time out of sample"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L3180afead2f3",
+    "title": "■ Detecting and Exploiting Regime Switching ARCH Dynamics in U.S. Stock and Bond Returns",
+    "authors": [],
+    "year": 2009,
+    "abstract": "",
+    "venue": "Stock Market Volatility",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.1201/9781420099553-10"
+    },
+    "doi": "10.1201/9781420099553-10",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.1201/9781420099553-10",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "Markov switching financial returns volatility regime"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L2971fcec529a",
+    "title": "Sequential Change-Point Detection in Time Series Models with Conditional Heteroscedasticity",
+    "authors": [
+      "Youngmi Lee",
+      "Sungdon Kim",
+      "Haejune Oh"
+    ],
+    "year": 2023,
+    "abstract": "",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.4366558"
+    },
+    "doi": "10.2139/ssrn.4366558",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.4366558",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "change point detection financial time series regime shift"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L328ee4d26912",
+    "title": "Optimal Portfolio Choice under Hidden Regime Switching Model",
+    "authors": [
+      "Zhiying Chen",
+      "Xuanhua Peng",
+      "Yongkui Li"
+    ],
+    "year": 2017,
+    "abstract": "",
+    "venue": "Proceedings of the Fifth Symposium of Risk Analysis and Risk Management in Western China (WRARM 2017)",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2991/wrarm-17.2017.43"
+    },
+    "doi": "10.2991/wrarm-17.2017.43",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2991/wrarm-17.2017.43",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio allocation risk management"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L4bcb17f00c5d",
+    "title": "When uncertainty matters: time-varying predictability in cross-sectional stock returns",
+    "authors": [
+      "Shan Chen",
+      "Yili Liu",
+      "Qiuhua Xu"
+    ],
+    "year": 2026,
+    "abstract": "",
+    "venue": "Annals of Operations Research",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.1007/s10479-026-07221-x"
+    },
+    "doi": "10.1007/s10479-026-07221-x",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.1007/s10479-026-07221-x",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "pockets predictability stock returns real time out of sample"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L1fe63954d627",
+    "title": "Optimal Portfolio Allocation under Higher Moments",
+    "authors": [
+      "Éric Jondeau",
+      "Michael Rockinger"
+    ],
+    "year": 2006,
+    "abstract": "We evaluate how departure from normality may affect the allocation of assets. A Taylor series expansion of the expected utility allows to focus on certain moments and to compute the optimal portfolio allocation numerically. A decisive advantage of this approach is that it remains operational even for a large number of assets. While the mean-variance criterion provides a good approximation of the expected utility maximisation under moderate non-normality, it may be ineffective under large departure from normality. In such cases, the three-moment or four-moment optimisation strategies may provide a good approximation of the expected utility.",
+    "venue": "European Financial Management",
+    "sources": [
+      "openalex"
+    ],
+    "source_ids": {
+      "openalex": "https://openalex.org/W2155320704"
+    },
+    "doi": "10.1111/j.1354-7798.2006.00309.x",
+    "arxiv_id": "",
+    "url": "https://openalex.org/W2155320704",
+    "citation_count": 427,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio allocation risk management"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L0ea3e1498f25",
+    "title": "Regime-aware financial volatility forecasting via in-context learning",
+    "authors": [
+      "Saba Asaad",
+      "Shayan Mohajer Hamidi",
+      "Ali Bereyhi"
+    ],
+    "year": 2026,
+    "abstract": "This work introduces a regime-aware in-context learning framework that leverages large language models (LLMs) for financial volatility forecasting under nonstationary market conditions. The proposed approach deploys pretrained LLMs to reason over historical volatility patterns and adjust their predictions without parameter fine-tuning. We develop an oracle-guided refinement procedure that constructs regime-aware demonstrations from training data. An LLM is then deployed as an in-context learner that predicts the next-step volatility from the input sequence using demonstrations sampled conditional to the estimated market label. This conditional sampling strategy enables the LLM to adapt its predictions to regime-dependent volatility dynamics through contextual reasoning alone. Experiments with multiple financial datasets show that the proposed regime-aware in-context learning framework outperforms both classical volatility forecasting approaches and direct one-shot learning, especially during high-volatility periods.",
+    "venue": "arXiv",
+    "sources": [
+      "arxiv"
+    ],
+    "source_ids": {
+      "arxiv": "2603.10299v1"
+    },
+    "doi": "",
+    "arxiv_id": "2603.10299v1",
+    "url": "https://arxiv.org/pdf/2603.10299v1",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "Markov switching financial returns volatility regime"
+    ],
+    "retrieval_round": 0,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "La2cd596b849d",
+    "title": "Portfolio Optimization Under Regime Switching and Transaction Costs: Combining Neural Networks and Dynamic Programs",
+    "authors": [
+      "Xiaoyue Li",
+      "John M. Mulvey"
+    ],
+    "year": 2021,
+    "abstract": "<jats:p> The contributions of this paper are threefold. First, by combining dynamic programs and neural networks, we provide an efficient numerical method to solve a large multiperiod portfolio allocation problem under regime-switching market and transaction costs. Second, the performance of our combined method is shown to be close to optimal in a stylized case. To our knowledge, this is the first paper to carry out such a comparison. Last, the superiority of the combined method opens up the possibility for more research on financial applications of generic methods, such as neural networks, provided that solutions to simplified subproblems are available via traditional methods. </jats:p><jats:p> The research on combining fast starts with neural networks began about four years ago. We observed that Professor Weinan E’s approach for solving systems of differential equations by neural networks had much improved performance when starting close to an optimal solution and could stall if the current iterate was far from an optimal solution. As we all know, this behavior is common with Newton- based algorithms. As a consequence, we discovered that combining a system of differential equations with a feedforward neural network could much improve overall computational performance. </jats:p><jats:p> In this paper, we follow a similar direction for dynamic portfolio optimization within a regime-switching market with transaction costs. It investigates how to improve efficiency by combining dynamic programming with a recurrent neural network. Traditional methods face the curse of dimensionality. In contrast, the running time of our combined approach grows approximately linearly with the number of risky assets. It is inspiring to explore the possibilities of combined methods in financial management, believing a careful linkage of existing dynamic optimization algorithms and machine learning will be an active domain going forward. </jats:p><jats:p> Relationship of the authors: Professor John M. Mulvey is Xiaoyue Li’s doctoral advisor. </jats:p>",
+    "venue": "INFORMS Journal on Optimization",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.1287/ijoo.2021.0053"
+    },
+    "doi": "10.1287/ijoo.2021.0053",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.1287/ijoo.2021.0053",
+    "citation_count": 13,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio transaction costs dynamic allocation"
+    ],
+    "retrieval_round": 1,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L6352bb5adf26",
+    "title": "Mean-variance Dynamic Portfolio Allocation with Transaction Costs: A Wiener Chaos Expansion Approach",
+    "authors": [
+      "Areski Cousin",
+      "J. Lelong",
+      "T. Picard"
+    ],
+    "year": 2023,
+    "abstract": "",
+    "venue": "Applied Mathematical Finance",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.1080/1350486x.2024.2357200"
+    },
+    "doi": "10.1080/1350486x.2024.2357200",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.1080/1350486x.2024.2357200",
+    "citation_count": 1,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio transaction costs dynamic allocation"
+    ],
+    "retrieval_round": 1,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L67923b919982",
+    "title": "Portfolio optimization in the financial market with regime switching under constraints and transaction costs using model predictive control",
+    "authors": [
+      "Vladimir Dombrovskii",
+      "Tatyana Obedko"
+    ],
+    "year": 2015,
+    "abstract": "",
+    "venue": "2015 European Control Conference (ECC)",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.1109/ecc.2015.7331055"
+    },
+    "doi": "10.1109/ecc.2015.7331055",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.1109/ecc.2015.7331055",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "real time out of sample regime detection financial markets transaction costs portfolio"
+    ],
+    "retrieval_round": 1,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L15796f29fba5",
+    "title": "Portfolio Optimization in the Financial Market with Regime Switching Under Constraints, Transaction Costs and Different Rates for Borrowing and Lending",
+    "authors": [
+      "Vladimir Dombrovskii",
+      "Tatyana Obedko"
+    ],
+    "year": 2014,
+    "abstract": "",
+    "venue": "SSRN Electronic Journal",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.2504962"
+    },
+    "doi": "10.2139/ssrn.2504962",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.2504962",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "real time out of sample regime detection financial markets transaction costs portfolio"
+    ],
+    "retrieval_round": 1,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L80fbfc983fd5",
+    "title": "Optimizing Portfolios with Neural Networks and Dynamic Programming: Tackling Regime Switching and Transaction Costs",
+    "authors": [
+      "V Shobha Rani",
+      "Ashok R",
+      "Raghupathi Kanala",
+      "Akhil Reddy Chittireddy",
+      "Praveen Kumar K",
+      "P. Suma"
+    ],
+    "year": 2024,
+    "abstract": "",
+    "venue": "2024 5th International Conference on Electronics and Sustainable Communication Systems (ICESC)",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.1109/icesc60852.2024.10689730"
+    },
+    "doi": "10.1109/icesc60852.2024.10689730",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.1109/icesc60852.2024.10689730",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio transaction costs dynamic allocation"
+    ],
+    "retrieval_round": 1,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L42fbefd1e608",
+    "title": "Stochastic Optimal Portfolio Allocation under Transaction Costs: A Classical vs Quantum Optimization Approach",
+    "authors": [
+      "Chinmay Sood"
+    ],
+    "year": 2026,
+    "abstract": "<jats:p>This paper studies optimal portfolio allocation under proportional transaction costs in a stochastic continuous-time framework. We model asset dynamics using geometric Brownian motion and formulate the investor's problem as a utility maximization problem under trading frictions. The resulting stochastic control problem is characterized via the Hamilton-Jacobi-Bellman (HJB) equation, which becomes nonlinear and intractable in closed form due to transaction costs. To overcome this, we implement Monte Carlo simulations to evaluate approximate optimal strategies and compare them against a discretized formulation recast as a Quadratic Unconstrained Binary Optimization (QUBO) problem. The QUBO model is solved using both classical and quantum-inspired approaches. Results show that while classical methods remain robust, quantum optimization provides a promising framework for high-dimensional extensions.</jats:p>",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.6621519"
+    },
+    "doi": "10.2139/ssrn.6621519",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.6621519",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio transaction costs dynamic allocation"
+    ],
+    "retrieval_round": 1,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L78d4ba23b20b",
+    "title": "Impact of Transaction Costs and ESG Constraints on Optimal Portfolio Allocation: Indian Equity Market Evidence",
+    "authors": [
+      "Chinmay Sood"
+    ],
+    "year": 2026,
+    "abstract": "<jats:p>We outline a comprehensive empirical study of how transaction costs and ESG constraints affect optimal Indian equity portfolios. Drawing on global and India-specific literature, we identify key objectives: to quantify the trade-offs in returns, risk and turnover when imposing ESG criteria, and to measure how transaction costs (taxes, spreads, market impact) erode net performance. We propose hypotheses such as: (a) ESG constraints have a neutral or modestly positive effect on risk-adjusted returns (consistent with prior studies[1]) but may increase portfolio tracking error; (b) Transaction costs substantially reduce net returns, especially for high-turnover strategies[2]. Using Indian market data (broad indices and stock returns), we will implement and backtest Mean-Variance (MV), Black-Litterman and CVaR portfolio models with variants imposing (i) exclusionary ESG screens, (ii) ESG-score thresholds, (iii) sector weight caps or soft ESG penalties. Transaction costs will include explicit taxes (e.g. 0.1% STT per side) and fees, plus implicit costs (bid-ask spreads, price impact, turnover-based charges). Portfolios will be rebalanced periodically (e.g. monthly) and evaluated via performance metrics (gross/net return, volatility, Sharpe ratio, turnover, transaction cost, tracking error).</jats:p>",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.6600798"
+    },
+    "doi": "10.2139/ssrn.6600798",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.6600798",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio transaction costs dynamic allocation"
+    ],
+    "retrieval_round": 1,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Ldddab85c6b90",
+    "title": "Heterogeneous time varying transaction costs and asset pricing in international equity markets",
+    "authors": [
+      "Andros Gregoriou",
+      "Christos Ioannidis",
+      "Sugata Ghosh"
+    ],
+    "year": 2009,
+    "abstract": "",
+    "venue": "Financial Markets and Portfolio Management",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.1007/s11408-009-0111-4"
+    },
+    "doi": "10.1007/s11408-009-0111-4",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.1007/s11408-009-0111-4",
+    "citation_count": 3,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "real time out of sample regime detection financial markets transaction costs portfolio"
+    ],
+    "retrieval_round": 1,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L631d47310391",
+    "title": "Learning Arbitrage-Free Option Prices with Neural SDEs under Regime Switching, Jumps, and Transaction Costs",
+    "authors": [
+      "Dr. MOHD RAAGIB SHAKEEL",
+      "Satyam Yadav",
+      "Musheer Ahmad"
+    ],
+    "year": 2025,
+    "abstract": "",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.5666910"
+    },
+    "doi": "10.2139/ssrn.5666910",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.5666910",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio transaction costs dynamic allocation"
+    ],
+    "retrieval_round": 1,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L3844a7e9f5e6",
+    "title": "Optimal Dynamic Asset Allocation with Transaction Costs: The Role of Hedging Demands",
+    "authors": [
+      "Pierre Collin-Dufresne",
+      "Kent Daniel",
+      "Mehmet Sağlam"
+    ],
+    "year": 2024,
+    "abstract": "",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.3386/w33058"
+    },
+    "doi": "10.3386/w33058",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.3386/w33058",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio transaction costs dynamic allocation"
+    ],
+    "retrieval_round": 1,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Ldafcee4e0e91",
+    "title": "Stop-loss strategies with serial correlation, regime switching, and transaction costs",
+    "authors": [
+      "Andrew W. Lo",
+      "Alexander Remorov"
+    ],
+    "year": 2017,
+    "abstract": "",
+    "venue": "Journal of Financial Markets",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.1016/j.finmar.2017.02.003"
+    },
+    "doi": "10.1016/j.finmar.2017.02.003",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.1016/j.finmar.2017.02.003",
+    "citation_count": 26,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "real time out of sample regime detection financial markets transaction costs portfolio"
+    ],
+    "retrieval_round": 1,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L2887f01d424b",
+    "title": "Liquidity Premia and Regime-Switching Transaction Costs and Cash Dividends",
+    "authors": [
+      "Jiwon Chae",
+      "Bong-Gyu Jang",
+      "Taeyoon Kim"
+    ],
+    "year": 2023,
+    "abstract": "",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.4383352"
+    },
+    "doi": "10.2139/ssrn.4383352",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.4383352",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio transaction costs dynamic allocation"
+    ],
+    "retrieval_round": 1,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L6d1b55ce3a53",
+    "title": "Liquidity Premia and Regime-Switching Transaction Costs and Cash Dividends",
+    "authors": [
+      "Jiwon Chae",
+      "Bong-Gyu Jang",
+      "Taeyoon Kim"
+    ],
+    "year": 2023,
+    "abstract": "",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.4495423"
+    },
+    "doi": "10.2139/ssrn.4495423",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.4495423",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio transaction costs dynamic allocation"
+    ],
+    "retrieval_round": 1,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L6850dffd26a3",
+    "title": "Liquidity Premia and Regime-Switching Transaction Costs and Cash Dividends",
+    "authors": [
+      "Jiwon Chae",
+      "Bong-Gyu Jang",
+      "Taeyoon Kim"
+    ],
+    "year": 2022,
+    "abstract": "",
+    "venue": "SSRN Electronic Journal",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.4253205"
+    },
+    "doi": "10.2139/ssrn.4253205",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.4253205",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio transaction costs dynamic allocation"
+    ],
+    "retrieval_round": 1,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Lcae966f655a6",
+    "title": "A machine learning approach to risk based asset allocation in portfolio optimization",
+    "authors": [
+      "Sanjay Agal",
+      "Krishna Raulji",
+      "Niyati Dhirubhai Odedra"
+    ],
+    "year": 2025,
+    "abstract": "This paper introduces a novel machine learning framework for dynamic risk-based asset allocation that addresses fundamental limitations in traditional portfolio optimization methods. The proposed architecture integrates Long Short-Term Memory networks for volatility forecasting with differentiable risk budgeting layers and regime-switching mechanisms, enabling end-to-end training of portfolio weights under adaptive risk constraints. Unlike conventional approaches that rely on static risk budgets and historical covariance estimates, our methodology dynamically adjusts risk targets based on real-time market indicators, including volatility expectations, credit spreads, and yield curve dynamics. The framework achieves three primary research objectives: first, it demonstrates superior risk-adjusted performance with a Sharpe ratio of 1.38 during the out-of-sample period (2017-2022), representing a 55% improvement over traditional risk parity strategies and a 23% enhancement over contemporary deep learning approaches. Second, the architecture maintains computational efficiency through sparse attention mechanisms, scaling linearly with asset count while processing 50-asset portfolios in under 25 milliseconds. Third, the model preserves interpretability via SHAP-based risk attribution, providing transparent insights into allocation decisions across different market regimes. Empirical results reveal particularly strong performance during volatile market conditions, with maximum drawdowns reduced by 41% during stress periods compared to conventional methods. The framework's proactive risk management capabilities were evidenced during the COVID-19 crisis, where it began reducing equity exposure two weeks before the market trough, demonstrating genuine predictive ability rather than reactive adjustment. Robustness checks confirm performance persistence under varying transaction costs, rebalancing frequencies, and alternative risk measures. These findings establish a new paradigm for portfolio optimization that successfully bridges theoretical finance with practical implementation. The framework's ability to navigate complex market environments while maintaining computational efficiency and interpretability suggests readiness for widespread institutional adoption. This research contributes to the evolving literature on differentiable finance while providing portfolio managers with a robust tool for constructing adaptive, risk-aware investment strategies.",
+    "venue": "Scientific Reports",
+    "sources": [
+      "openalex"
+    ],
+    "source_ids": {
+      "openalex": "https://openalex.org/W4416694506"
+    },
+    "doi": "10.1038/s41598-025-26337-x",
+    "arxiv_id": "",
+    "url": "https://openalex.org/W4416694506",
+    "citation_count": 4,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio transaction costs dynamic allocation"
+    ],
+    "retrieval_round": 1,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L63de34205af0",
+    "title": "Ai-driven adaptive asset allocation: A machine learning approach to dynamic portfolio optimization in volatile financial markets",
+    "authors": [
+      "Ayobami Gabriel Olanrewaju",
+      "Adeyinka Oluwasimisola Ajayi",
+      "Omolabake Ibironke Pacheco",
+      "Adebayo Oluwatosin Dada",
+      "Adepeju Ayotunde Adeyinka"
+    ],
+    "year": 2025,
+    "abstract": "Financial markets are highly volatile during crises and regime shifts, challenging the efficacy of traditional static portfolio allocation methods. This study explores whether machine learning (ML) techniques can enhance dynamic asset allocation in volatile U.S. markets. We investigate the adaptability of ML models—such as deep reinforcement learning (DRL), neural networks, and random forest ensembles—in comparison to conventional methods like Markowitz mean-variance and Black-Litterman models. Drawing from recent literature, we highlight how ML strategies can capture nonlinear patterns and adjust in real time to changing market conditions. Our methodology trains ML models on extensive U.S. market data (2007-2022), including equity indices, bonds, and volatility measures. The goal is to maximize risk-adjusted returns while mitigating drawdowns. Empirical results show that ML-based portfolios outperform static benchmarks across key performance metrics. Notably, the DRL agent reduced equity exposure ahead of volatility spikes, achieving higher Sharpe ratios and smaller drawdowns. These findings support the potential of AI-driven strategies to adapt during turbulent periods and generate superior returns. We conclude by discussing the practical implications for investors, the need for robust validation, and future research on integrating explainable AI with financial theory. Overall, ML offers a powerful tool for dynamic portfolio optimization in increasingly uncertain financial environments.",
+    "venue": "International Journal of Research in Finance and Management",
+    "sources": [
+      "openalex"
+    ],
+    "source_ids": {
+      "openalex": "https://openalex.org/W4409394922"
+    },
+    "doi": "10.33545/26175754.2025.v8.i1d.451",
+    "arxiv_id": "",
+    "url": "https://openalex.org/W4409394922",
+    "citation_count": 11,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio transaction costs dynamic allocation"
+    ],
+    "retrieval_round": 1,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Lb1039df4c368",
+    "title": "Dynamic Factor Allocation via Momentum-Based Regime Switching",
+    "authors": [
+      "Jim Tai",
+      "Stephanie Leung",
+      "Justin Jimenez"
+    ],
+    "year": 2026,
+    "abstract": "<jats:p>We present a systematic framework for dynamic allocation across equity factors (Value, Size, Momentum, Quality, Growth) using a momentum-based regime switching model. Using a z-score normalization approach with only two hyperparameters, we identify Bull and Bear regimes for each factor through normalized trend signals. Our regime identification proves statistically significant across all factors, with Size and Growth showing strong significance (p &lt; 0.01). Cross-sectional validation confirms that Bull regimes exhibit systematic positive forward returns (t = 1.98, p = 0.047), while Bear regimes show no significant pattern, supporting asymmetric treatment in portfolio construction. The factor timing strategy achieves a Sharpe ratio of 0.66 compared to 0.59 for an equal-weighted benchmark, with annualized returns of 13.0% versus 11.3% over the 1998-2025 period. The strategy demonstrates consistent outperformance, with a 78.6% calendar year hit rate, while maintaining manageable turnover of approximately 3x annually. We validate practical implementability through ETF-based backtesting, finding only modest performance degradation from tracking error and expense ratios. Our results support the hypothesis that factor momentum exhibits sufficient persistence to be captured by simple trend-following signals.</jats:p>",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.6333378"
+    },
+    "doi": "10.2139/ssrn.6333378",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.6333378",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio transaction costs dynamic allocation"
+    ],
+    "retrieval_round": 1,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Lb961957e18f4",
+    "title": "Dynamic Factor Allocation via Momentum-Based Regime Switching",
+    "authors": [
+      "Jim Tai",
+      "Stephanie Leung",
+      "Justin Jimenez"
+    ],
+    "year": 2026,
+    "abstract": "<jats:p>We present a systematic framework for dynamic allocation across equity factors (Value, Size, Momentum, Quality, Growth) using a momentum-based regime switching model. Using a z-score normalization approach with only two hyperparameters, we identify Bull and Bear regimes for each factor through normalized trend signals. Our regime identification proves statistically significant across all factors, with Size and Growth showing strong significance (p &lt; 0.01). Cross-sectional validation confirms that Bull regimes exhibit systematic positive forward returns (t = 1.98, p = 0.047), while Bear regimes show no significant pattern, supporting asymmetric treatment in portfolio construction. The factor timing strategy achieves a Sharpe ratio of 0.66 compared to 0.59 for an equal-weighted benchmark, with annualized returns of 13.0% versus 11.3% over the 1998-2025 period. The strategy demonstrates consistent outperformance, with a 78.6% calendar year hit rate, while maintaining manageable turnover of approximately 3x annually. We validate practical implementability through ETF-based backtesting, finding only modest performance degradation from tracking error and expense ratios. Our results support the hypothesis that factor momentum exhibits sufficient persistence to be captured by simple trend-following signals.</jats:p>",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.6224058"
+    },
+    "doi": "10.2139/ssrn.6224058",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.6224058",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio transaction costs dynamic allocation"
+    ],
+    "retrieval_round": 1,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L04944f499324",
+    "title": "Dynamic Factor Allocation via Momentum-Based Regime Switching",
+    "authors": [
+      "Jim Tai",
+      "Stephanie Leung",
+      "Justin Jimenez"
+    ],
+    "year": 2026,
+    "abstract": "<jats:p>We present a systematic framework for dynamic allocation across equity factors (Value, Size, Momentum, Quality, Growth) using a momentum-based regime switching model. Using a z-score normalization approach with only two hyperparameters, we identify Bull and Bear regimes for each factor through normalized trend signals. Our regime identification proves statistically significant across all factors, with Size and Growth showing strong significance (p &lt; 0.01). Cross-sectional validation confirms that Bull regimes exhibit systematic positive forward returns (t = 1.98, p = 0.047), while Bear regimes show no significant pattern, supporting asymmetric treatment in portfolio construction. The factor timing strategy achieves a Sharpe ratio of 0.66 compared to 0.59 for an equal-weighted benchmark, with annualized returns of 13.0% versus 11.3% over the 1998-2025 period. The strategy demonstrates consistent outperformance, with a 78.6% calendar year hit rate, while maintaining manageable turnover of approximately 3x annually. We validate practical implementability through ETF-based backtesting, finding only modest performance degradation from tracking error and expense ratios. Our results support the hypothesis that factor momentum exhibits sufficient persistence to be captured by simple trend-following signals.</jats:p>",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.6289958"
+    },
+    "doi": "10.2139/ssrn.6289958",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.6289958",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio transaction costs dynamic allocation"
+    ],
+    "retrieval_round": 1,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Laccfb5d85197",
+    "title": "Cryptocurrency Portfolio Allocation under Credibilistic CVaR Criterion and Practical Constraints",
+    "authors": [
+      "Hossein Ghanbari",
+      "Emran Mohammadi",
+      "AmirMohammad Larni-Fooeik",
+      "Ronald Ravinesh Kumar",
+      "Peter Josef Stauvermann",
+      "Mostafa Shabani"
+    ],
+    "year": 2024,
+    "abstract": "The cryptocurrency market offers attractive but risky investment opportunities, characterized by rapid growth, extreme volatility, and uncertainty. Traditional risk management models, which rely on probabilistic assumptions and historical data, often fail to capture the market’s unique dynamics and unpredictability. In response to these challenges, this paper introduces a novel portfolio optimization model tailored for the cryptocurrency market, leveraging a credibilistic CVaR framework. CVaR was chosen as the primary risk measure because it is a downside risk measure that focuses on extreme losses, making it particularly effective in managing the heightened risk of significant downturns in volatile markets like cryptocurrencies. The model employs credibility theory and trapezoidal fuzzy variables to more accurately capture the high levels of uncertainty and volatility that characterize digital assets. Unlike traditional probabilistic approaches, this model provides a more adaptive and precise risk management strategy. The proposed approach also incorporates practical constraints, including cardinality and floor and ceiling constraints, ensuring that the portfolio remains diversified, balanced, and aligned with real-world considerations such as transaction costs and regulatory requirements. Empirical analysis demonstrates the model’s effectiveness in constructing well-diversified portfolios that balance risk and return, offering significant advantages for investors in the rapidly evolving cryptocurrency market. This research contributes to the field of investment management by advancing the application of sophisticated portfolio optimization techniques to digital assets, providing a robust framework for managing risk in an increasingly complex financial landscape.",
+    "venue": "Risks",
+    "sources": [
+      "openalex"
+    ],
+    "source_ids": {
+      "openalex": "https://openalex.org/W4403401890"
+    },
+    "doi": "10.3390/risks12100163",
+    "arxiv_id": "",
+    "url": "https://openalex.org/W4403401890",
+    "citation_count": 12,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio transaction costs dynamic allocation"
+    ],
+    "retrieval_round": 1,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Lb80ceb5d4a47",
+    "title": "Rebalancing with transaction costs: theory, simulations, and actual data",
+    "authors": [
+      "Rim El Bernoussi",
+      "Michael Rockinger"
+    ],
+    "year": 2023,
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>In the absence of transaction costs and the presence of independent returns, a buy-and-hold strategy theoretically generates higher expected returns than a fixed-weight strategy, where the portfolio weights are regularly readjusted/rebalanced to some initial level. This higher expected return comes with higher volatility. The resulting trade-off leads to different rankings of the Sharpe ratio depending on the statistical moments of the assets. We also focus on Maximum Drawdown. We theoretically discuss causes affecting the ranking of the Sharpe ratio, and we introduce an easy-to-implement methodology to deal with proportional transaction costs. Under transaction costs, the buy-and-hold strategy as the cheaper approach should be the winner. In various simulation experiments, we investigate the relevance of transaction costs on rebalancing strategies. Eventually, we consider several realistic portfolios with a risk-free asset, bonds, stock indices, commodities and real estate that allow us to demonstrate that in practice rebalancing has value.</jats:p>",
+    "venue": "Financial Markets and Portfolio Management",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.1007/s11408-022-00419-6"
+    },
+    "doi": "10.1007/s11408-022-00419-6",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.1007/s11408-022-00419-6",
+    "citation_count": 9,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "real time out of sample regime detection financial markets transaction costs portfolio"
+    ],
+    "retrieval_round": 1,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L5f33cb827567",
+    "title": "Dynamic Asset Allocation with Asset-Specific Regime Forecasts",
+    "authors": [
+      "Shu, Yizhan",
+      "Chenyu Yu",
+      "John M. Mulvey"
+    ],
+    "year": 2024,
+    "abstract": "This article introduces a novel hybrid regime identification-forecasting framework designed to enhance multi-asset portfolio construction by integrating asset-specific regime forecasts. Unlike traditional approaches that focus on broad economic regimes affecting the entire asset universe, our framework leverages both unsupervised and supervised learning to generate tailored regime forecasts for individual assets. Initially, we use the statistical jump model, a robust unsupervised regime identification model, to derive regime labels for historical periods, classifying them into bullish or bearish states based on features extracted from an asset return series. Following this, a supervised gradient-boosted decision tree classifier is trained to predict these regimes using a combination of asset-specific return features and cross-asset macro-features. We apply this framework individually to each asset in our universe. Subsequently, return and risk forecasts which incorporate these regime predictions are input into Markowitz mean-variance optimization to determine optimal asset allocation weights. We demonstrate the efficacy of our approach through an empirical study on a multi-asset portfolio comprising twelve risky assets, including global equity, bond, real estate, and commodity indexes spanning from 1991 to 2023. The results consistently show outperformance across various portfolio models, including minimum-variance, mean-variance, and naive-diversified portfolios, highlighting the advantages of integrating asset-specific regime forecasts into dynamic asset allocation.",
+    "venue": "arXiv (Cornell University)",
+    "sources": [
+      "openalex"
+    ],
+    "source_ids": {
+      "openalex": "https://openalex.org/W4399758671"
+    },
+    "doi": "10.48550/arxiv.2406.09578",
+    "arxiv_id": "",
+    "url": "https://openalex.org/W4399758671",
+    "citation_count": 5,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio transaction costs dynamic allocation"
+    ],
+    "retrieval_round": 1,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Lab2393419f64",
+    "title": "Dynamic Mean-Variance Portfolio Selection with Transaction Costs",
+    "authors": [
+      "Min Dai",
+      "Yanwei Jia",
+      "Hanqing Jin"
+    ],
+    "year": 2024,
+    "abstract": "",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.4958481"
+    },
+    "doi": "10.2139/ssrn.4958481",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.4958481",
+    "citation_count": 3,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio transaction costs dynamic allocation"
+    ],
+    "retrieval_round": 1,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L9b65cdf47423",
+    "title": "Intertemporal Consumption Choices, Transaction Costs and Limited Participation to Financial Markets: Reconciling Data and Theory",
+    "authors": [
+      "Orazio Attanasio",
+      "Monica Paiella"
+    ],
+    "year": 2009,
+    "abstract": "",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.1920/re.ifs.2024.0617"
+    },
+    "doi": "10.1920/re.ifs.2024.0617",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.1920/re.ifs.2024.0617",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "real time out of sample regime detection financial markets transaction costs portfolio"
+    ],
+    "retrieval_round": 1,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Ld61ac412855c",
+    "title": "Dynamic Portfolio Selection under Transaction Costs and Signal Decay",
+    "authors": [
+      "Nick Firoozye",
+      "Vincent Tan",
+      "Stefan Zohren"
+    ],
+    "year": 2023,
+    "abstract": "",
+    "venue": "SSRN Electronic Journal",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.4425407"
+    },
+    "doi": "10.2139/ssrn.4425407",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.4425407",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio transaction costs dynamic allocation"
+    ],
+    "retrieval_round": 1,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L131a083b0d93",
+    "title": "Discrete‐time risk sensitive portfolio optimization with proportional transaction costs",
+    "authors": [
+      "Marcin Pitera",
+      "Łukasz Stettner"
+    ],
+    "year": 2023,
+    "abstract": "Abstract In this paper we consider a discrete‐time risk sensitive portfolio optimization over a long time horizon with proportional transaction costs. We show that within the log‐return i.i.d. framework the solution to a suitable Bellman equation exists under minimal assumptions and can be used to characterize the optimal strategies for both risk‐averse and risk‐seeking cases. Moreover, using numerical examples, we show how a Bellman equation analysis can be used to construct or refine optimal trading strategies in the presence of transaction costs.",
+    "venue": "Mathematical Finance",
+    "sources": [
+      "openalex"
+    ],
+    "source_ids": {
+      "openalex": "https://openalex.org/W4379742034"
+    },
+    "doi": "10.1111/mafi.12406",
+    "arxiv_id": "",
+    "url": "https://openalex.org/W4379742034",
+    "citation_count": 13,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio transaction costs dynamic allocation"
+    ],
+    "retrieval_round": 1,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L3a8e38cc52e4",
+    "title": "Real-Time Out-of-Sequence Transaction Processing in Insurance Policy Administration Using Event-Sourced Timeline Replay with Cascading Financial Reconciliation",
+    "authors": [
+      "Kishor Kumar Jakkula"
+    ],
+    "year": 2026,
+    "abstract": "<jats:p>Insurance policy administration systems routinely encounter out-of-sequence (OOS) transactions-policy changes whose effective dates precede one or more already-processed transactions. Existing approaches, including batch overnight processing, manual recalculation, and flat reversal-and-re-entry, introduce latency, data inconsistency, audit trail gaps, and significant operational overhead. This paper presents a novel computer-implemented system and method for real-time OOS transaction processing using an event-sourced, bi-temporal policy timeline partitioned into date-windowed segments. When a backdated transaction is received, the system detects the OOS condition, reconstructs the policy state at the backdated date, applies the OOS change, and automatically replays all downstream transactions in chronological order against the modified state. A four-phase processing algorithm governs detection and validation, timeline reconstruction and replay, financial reconciliation, and immutable audit persistence. Conflict detection identifies entity-removed, field, and state conflicts with configurable resolution strategies. Financial effects cascade automatically to billing, commission, and reinsurance subsystems. A non-destructive preview mode allows users to evaluate impact before committing changes. The system eliminates manual intervention, reduces processing latency from hours to seconds, and preserves a complete immutable audit trail satisfying multi-jurisdictional regulatory requirements. The architecture is designed for multi-tenant cloud deployment and supports AI-augmented conflict resolution and compliance monitoring.</jats:p>",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.6347319"
+    },
+    "doi": "10.2139/ssrn.6347319",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.6347319",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "real time out of sample regime detection financial markets transaction costs portfolio"
+    ],
+    "retrieval_round": 1,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L8a839aae1ab9",
+    "title": "Rational Portfolio Choice with Stochastic Transaction Costs",
+    "authors": [
+      "Vassilios Dimitrakas"
+    ],
+    "year": 2026,
+    "abstract": "<jats:p>This paper describes the optimal investment strategy of a rational investor in an economic environment where the transaction costs behave as a Markov Chain. It extends the methods of the literature on deterministic transaction costs to the stochastic-costs case, giving a closed-form solution up to a system of algebraic equations that makes the numerical analysis tractable. The investigation of a two-state Markov Chain cost structure shows that the investor always trades off the benefit of achieving optimal risk-adjusted growth for his portfolio by staying close to a modified \"Merton Line\" with the benefit of waiting until the transaction costs ebb to lower size. This trade-off depends on the size of the costs at each state and the average duration of the high-cost state. It however does not depend on the duration of the no-costs state, the risk aversion or the riskiness of the stock.</jats:p>",
+    "venue": "",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.2139/ssrn.6856344"
+    },
+    "doi": "10.2139/ssrn.6856344",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.2139/ssrn.6856344",
+    "citation_count": 0,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "regime switching portfolio transaction costs dynamic allocation"
+    ],
+    "retrieval_round": 1,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "L293972b525f7",
+    "title": "Constant Rebalanced Portfolio Optimization Under Nonlinear Transaction Costs",
+    "authors": [
+      "Yuichi Takano",
+      "Jun-ya Gotoh"
+    ],
+    "year": 2011,
+    "abstract": "",
+    "venue": "Asia-Pacific Financial Markets",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.1007/s10690-010-9130-4"
+    },
+    "doi": "10.1007/s10690-010-9130-4",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.1007/s10690-010-9130-4",
+    "citation_count": 10,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "real time out of sample regime detection financial markets transaction costs portfolio"
+    ],
+    "retrieval_round": 1,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  },
+  {
+    "paper_id": "Lc9877063d790",
+    "title": "Multi-period portfolio selection with transaction costs",
+    "authors": [
+      "Lan Yi"
+    ],
+    "year": 2010,
+    "abstract": "",
+    "venue": "2010 2nd IEEE International Conference on Information and Financial Engineering",
+    "sources": [
+      "crossref"
+    ],
+    "source_ids": {
+      "crossref": "https://doi.org/10.1109/icife.2010.5609261"
+    },
+    "doi": "10.1109/icife.2010.5609261",
+    "arxiv_id": "",
+    "url": "https://doi.org/10.1109/icife.2010.5609261",
+    "citation_count": 1,
+    "influential_citation_count": 0,
+    "language": "en",
+    "matched_queries": [
+      "real time out of sample regime detection financial markets transaction costs portfolio"
+    ],
+    "retrieval_round": 1,
+    "extraction_basis": "abstract_only",
+    "source_warning_flags": [
+      "local_raw_metadata_blind_forward_test"
+    ]
+  }
+]
